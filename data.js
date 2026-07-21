@@ -43,10 +43,10 @@ const CATEGORIES = [
       <h4>Before every procedure</h4>
       <ul>
         <li>Bloodwork: CBC, coags/INR, platelets</li>
-        <li>Review meds — Are they taking anticoagulants/antiplatelets & what was the last dose (LMWH/DOAC hold times)</li>
+        <li>Review meds — anticoagulants/antiplatelets & last dose (LMWH/DOAC hold times)</li>
         <li>Indication utility: <em>Do I need this now? Can it wait? Will it change management?</em></li>
         <li>Informed consent signed & on chart</li>
-        <li>Adjust bed to proper height and properly position patient</li>
+        <li>Adjust bed to proper height; position patient</li>
       </ul>
       <h4>After</h4>
       <ul>
@@ -78,80 +78,73 @@ const CATEGORIES = [
       </ul>
       <h4>Catheter length by site</h4>
       <ul><li>Right IJ ≈ <b>16 cm</b> · Left IJ ≈ <b>20 cm</b> · Femoral ≈ <b>24 cm</b></li></ul>
-      <h4>Preparation</h4>
+      <h4>Kit / setup</h4>
       <ul>
-        <li><b>Materials:</b> CVC kit, sterile gloves + gown, NS flush ×3, chlorhexidine scrub ×3, sterile probe cover, Kelly clamp</li>
-        <li><b>Position:</b> slight reverse Trendelenburg. MRP at head of bed facing feet</li>
-        <li>Localize vein and understand anatomy with US prior to proceeding. Consider left IJ if more favourable</li>
-        <li>Don sterile gown and gloves</li>
-        <li>Drape in sterile fashion</li>
-        <li>Clean area with chlorhexidine</li>
-        <li>Prime everything: Loosen needle (uncap needle and pull back on plungers), run guidewire through aparatus to ensure smooth, ensure scalpel prepped, dilator within reach, and for the triple lumen catheter, flush all 3 lumens with NS, place blue locks on outside lumens and keep the middle lumen open. Line up the materials in order of use: lidocaine, finder needle, wire, scalpel, dilator, then triple lumen catheter.</li>
-        <li>If patient anxious, consider precedex/dexmedetomidine</li>
-        <li>Clean area with chlorhexidine</li>
+        <li>CVC kit, sterile gloves + gown, NS flush ×3, chlorhexidine scrub ×3, sterile probe cover</li>
+        <li>Position: change bed angle so carotid isn't directly under the IJ; slight Trendelenburg; precedex/dexmedetomidine for anxiety; head of bed facing feet</li>
+        <li>Prime everything: uncap needle & pull back on plunger, run guidewire to confirm smooth, scalpel, dilator, catheter — caps/locks on <b>all ports except the middle</b>, flush all 3 lumens with NS. Line up in order of use: <b>finder needle → wire → dilator → scalpel → catheter</b></li>
       </ul>
       <h4>Ultrasound landmarking (IJ)</h4>
       <ul>
-        <li>Linear probe, vascular preset, <b>marker to patient's left</b> so that US movements make sense at the head of the bed</li>
-        <li>IJ = lateral to carotid, thin-walled, easily collapsible, respirophasic, non-pulsatile. Want to pick a spot where IJ is most distended</li>
+        <li>Linear probe, vascular preset, <b>marker to patient's left</b></li>
+        <li>IJ = lateral to carotid, thin-walled, easily collapsible, respirophasic, non-pulsatile</li>
         <li>Orient approach so vein is <b>beside</b> the carotid, not on top of it</li>
         <li>Mark skin-to-vein depth → expect flashback at that distance (past it = through the vein)</li>
       </ul>
       <h4>Technique</h4>
       <ul>
-        <li>Local → bleb (1% lidocaine) → anesthetize down to & just above vein under US (Probe & needle should be ~90° to each other for best visualization)</li>
-        <li>"Creep" the needle with negative pressure until flashback → stabilize → pull back on plunger to confirm that you are still in the vein</li>
-        <li>With needle stabilized, remove syringe then thread wire</li>
-        <li><b>KEY STEP: visualize wire in vein (short + long axis) BEFORE dilating</b></li>
-        <li>Skin nick at the angle of the wire, cutting <em>against</em> the wire. Dilate gently (brute force kinks the wire) — only ⅓ (max ½) of dilator length. Most important is to dilate the skin and subcut tissue. Move wire in and out (small motions) to ensure no kinking.</li>
-        <li>KEY STEP: DO NOT take hands off wire. Thread catheter over wire. <b>PULL the WIRE</b> back until it exits the port → then you can advance and hub catheter. Then remove wire</li>
-        <li>Bleed-back each port (one at a time), aspirate to clear any air, then flush; keep others clamped/locked. Secure catheter with sutures.</li>
+        <li>Local → bleb → anesthetize down to & just above vein under US (probe & needle at ~90°)</li>
+        <li>"Creep" the needle with negative pressure until flashback → stabilize → pull back to confirm still in vein</li>
+        <li>Thread wire → <b>visualize wire in vein (short + long axis) BEFORE dilating</b></li>
+        <li>Skin nick at the angle of the wire, cutting <em>against</em> the wire; dilate gently (brute force kinks the wire) — only ⅓ (max ½) of dilator length; confirm wire still moves smoothly</li>
+        <li>Thread catheter over wire, pulling wire back until it exits the port → hub catheter → remove wire</li>
+        <li>Bleed-back each port (one at a time), aspirate to clear air, then flush; keep others clamped/locked</li>
         <li>CXR for any line placed in the thorax</li>
       </ul>
       <h4>Confirming placement (IJ)</h4>
       <ul><li>Tip at cavo-atrial junction, at/just above the carina, above the pericardial reflection (lower = tamponade risk); ideally oriented vertically in SVC</li></ul>
       <details><summary>Complications</summary><div class="inner">
         <ul>
-          <li><b>Arterial puncture:</b> If with the <b>finder needle</b>, then apply pressure, sit them up, and reattempt. If with <b>wire</b>, then remove wire and apply pressure. If with the <b>dilator</b> APPLY HEAVY PRESSURE + STAT vascular surgery. If with <b>catheter</b>, LEAVE IT IN AND STAT vascular surgery.</li>
-          <li><b>Pneumothorax</b> Low incidence with US. Will usually pick up on post-procedure CXR. If small/apical: observe. If large/tension: chest tube/pigtail</li>
-          <li><b>Lost wire:</b> Call vascular surgery/IR. Pro tip is to clamp wire with Kelly near skin to avoid this complication</li>
-          <li><b>Local hematoma:</b> IF stable: monitor. If expanding/mass effect: compression + vascular surgery</li>
+          <li><b>Arterial puncture</b> — finder needle: pressure, sit up, reattempt. Wire: remove + pressure. <b>Dilator: heavy pressure + STAT vascular surgery. Catheter: leave it in, STAT vascular surgery.</b></li>
+          <li><b>Pneumothorax</b> — puncturing pleura; low with US; usually on post-procedure CXR. Small/apical: observe. Large/tension: chest tube/pigtail</li>
+          <li><b>Lost wire</b> — call vascular surgery/IR; clamp with Kelly near skin if still visible</li>
+          <li><b>Local hematoma</b> — stable: monitor. Expanding/mass effect: compression + vascular surgery</li>
         </ul>
+      </div></details>
       <h4>Documentation</h4>
-      </div></details>`},
+      <div class="dp-actions"><button class="copybtn" type="button" data-copy-pre>Copy note</button></div>
+      <pre class="dp">Date: []
+Time: []
+Indication: Hemodynamic monitoring/Intravenous access
+Resident: []
+Attending: []
+A time-out was completed verifying correct patient, procedure, site, positioning, and special equipment if applicable. The patient was placed in a dependent position appropriate for central line placement based on the vein to be cannulated. The patient's [right/left] [neck/shoulder/groin] was prepped and draped in sterile fashion. 1% Lidocaine was used to anesthetize the surrounding skin area. A triple lumen [9-French] Cordis catheter was introduced into the [subclavian/internal jugular/common femoral vein] using the Seldinger technique [and under ultrasound guidance]. The catheter was threaded smoothly over the guide wire and appropriate blood return was obtained. Each lumen of the catheter was evacuated of air and flushed with sterile saline. The catheter was then sutured in place to the skin and a sterile dressing applied. Perfusion to the extremity distal to the point of catheter insertion was checked and found to be adequate. [Attending/Resident] was present for the entire procedure.
+Estimated Blood Loss: []
+The patient tolerated the procedure well and there were no complications.</pre>`},
 
     {t:"Thoracentesis", body:`
       <p class="lead">Lung US with abdominal preset. Seated & leaning forward ideal; or supine at 30° with ipsilateral arm overhead.</p>
       <h4>Indications / contraindications</h4>
       <ul>
         <li>Diagnostic and/or therapeutic (relieve WOB via lung recruitment)</li>
-        <li>Contraindications: irreversible coagulopathy (wait to hold AC if possible), platelets &lt;20 (target &gt;50; newer evidence supports INR&gt;3 / plt&gt;25), overlying infection, unsafe anatomy. Mechanically ventilated = higher tension-PTX risk</li>
+        <li>CI: irreversible coagulopathy (wait to hold AC if possible), platelets &lt;20 (target &gt;50; newer evidence supports INR&gt;3 / plt&gt;25), overlying infection, unsafe anatomy. Mechanically ventilated = higher tension-PTX risk</li>
         <li>Labs: total protein, LDH</li>
       </ul>
       <h4>Ultrasound & marking</h4>
       <ul>
-        <li>Curvilinear to find best rib space → linear array to refine & see vessels. Enter through the <b>nferior</b> margin of the rib space as the neurovascular bundle sits below each rib</li>
-        <li>Go <b>≥10 cm lateral of the posterior midline</b> (bundle more exposed medially). Fluid pocket should be ≥1.5 cm deep, wider than 2 intercostal spaces, and ≥1 rib space above diaphragm</li>
-        <li>Run power Doppler along the needle path. The probe angle = the angle of needle approach</li>
-      </ul>
-      <h4>Preparation</h4>
-      <ul>
-        <li><b>Materials:</b> Thoracentesis kit (Pleura seal), 1% lidocaine (2 vials 5cc each),  3x chlorhexidine lollipops, sterile gown/gloves, mask with eyewear, large syringe for collection, 3x yellow top urine collection containers, labels for samples (put name, sample type, patient sticker, date), dressing with petroleum jelly, and gauze</li>
-        <li>Ensure area of skin is marked where we will do procedure</li>
-        <li>Sterile donning</li>
-        <li>Prep area with chlorhexidine and drape patient in sterile fashion</li>
+        <li>Curvilinear to find best rib space → linear array to refine & see vessels; ensure needle enters <b>inferior margin of the rib space</b> (neurovascular bundle sits below each rib)</li>
+        <li>Go <b>≥10 cm lateral of the posterior midline</b> (bundle more exposed medially); fluid pocket ≥1.5 cm deep, wider than 2 intercostal spaces, ≥1 rib space above diaphragm</li>
+        <li>Run power Doppler along the needle path; note probe angle = angle of approach</li>
       </ul>
       <h4>Technique</h4>
       <ul>
-        <li>Freeze skin, then freeze down to the rib & periosteum. When injecting needle, <b>walk the needle over the superior surface of the rib</b>. Inject remainder into pleural space</li>
-        <li>Real needle: Insert needle at the target site (superior margin of rib) advance with <b>negative pressure</b>. Anchor left hand (needle) to the patient, anchor right elbow to your body</li>
+        <li>Freeze down to the rib & periosteum; <b>walk the needle over the superior surface of the rib</b>, freezing the track (bleb of lido in skin, advance/withdraw/inject to pleural space, then inject into pleural space)</li>
+        <li>Real needle: advance with <b>negative pressure</b> — anchor left hand (needle) to the patient, anchor right elbow to your body</li>
         <li>At pleural space: lock right arm, advance left-hand catheter into the space while withdrawing needle</li>
-        <li>Once needle removed, occlude catheter with finger. Connect the stopcock to the catheter</li>
         <li>Advance catheter 3–5 mm more; if it won't advance you're likely interstitial → restart</li>
         <li>Ask patient to <b>hum</b> on catheter removal (↑ intrathoracic pressure, ↓ PTX). Petroleum jelly + gauze, pull quickly</li>
-        <li>If performing a chest tube, use the Seldinger technique</li>
+        <li>Chest tube = Seldinger technique</li>
       </ul>
-      <h4>Documenation</h4>
       <div class="flag"><b>Post-thora CXR</b> to check for: interval/residual effusion, tubing/catheter placement, pneumothorax.</div>
       <h4>Samples</h4>
       <ul><li>Cell count, protein, LDH, cytology ±AFB, flow cytometry (malignancy), cultures + Gram stain/sensitivity, glucose. ~50 cc/vial, 4 vials generous; label with name/sample type/patient sticker/date</li></ul>
@@ -162,7 +155,17 @@ const CATEGORIES = [
           <li><b>Intercostal vessel hemorrhage</b> → resuscitate, CT chest w/ contrast, thoracic surgery/IR. Walk needle ABOVE the rib</li>
           <li><b>Pneumothorax</b> (shear as lung re-expands / ex-vacuo) → manage as any PTX</li>
         </ul>
-      </div></details>`},
+      </div></details>
+      <h4>Documentation</h4>
+      <div class="dp-actions"><button class="copybtn" type="button" data-copy-pre>Copy note</button></div>
+      <pre class="dp">Date: []
+Time: []
+Indication: Large pleural effusion
+Resident: []
+Attending: []
+A time-out was completed verifying correct patient, procedure, site, positioning, and special equipment if applicable. The patient's [right/left] side was prepped and draped in a sterile manner after the appropriate infiltration level was confirmed by ultrasound. 1% lidocaine was used to anesthetize the surrounding skin. A finder needle was then used to locate fluid and clear yellow fluid was obtained. A 10-blade scalpel was used to make the incision. The thoracentesis catheter was then threaded without difficulty. The patient had [? mL] of clear yellow fluid removed. [Attending/Resident] was present for the entire procedure. A post-procedure chest x-ray was ordered and the fluid will be sent for several studies.
+Estimated Blood Loss: []
+The patient tolerated the procedure well and there were no complications.</pre>`},
 
     {t:"Paracentesis", body:`
       <p class="lead">Curvilinear, abdominal preset. Semi-Fowler's; tilt to the side so fluid pools (puncture side up).</p>

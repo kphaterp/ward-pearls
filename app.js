@@ -18,6 +18,19 @@
     // if arriving with a #hash, open that card
     if (location.hash) openHash();
     window.addEventListener("hashchange", openHash);
+    // copy buttons embedded inside card bodies (e.g. Documentation blocks)
+    document.addEventListener("click", e => {
+      const btn = e.target.closest(".copybtn[data-copy-pre]");
+      if (!btn) return;
+      const wrap = btn.closest(".dp-actions");
+      const pre = wrap && wrap.nextElementSibling;
+      if (pre && pre.tagName === "PRE") {
+        navigator.clipboard.writeText(pre.textContent).then(() => {
+          btn.textContent = "Copied ✓"; btn.classList.add("done");
+          setTimeout(() => { btn.textContent = "Copy note"; btn.classList.remove("done"); }, 1600);
+        });
+      }
+    });
   });
 
   function buildTopNav(active) {
