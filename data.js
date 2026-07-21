@@ -1,15 +1,31 @@
 /* ============================================================
    WARD PEARLS — CONTENT
    ------------------------------------------------------------
-   To edit a topic: find it below and change the `body` string.
-   To add a topic: copy a { t:"", body:`` } block.
-   To add a category: copy a whole { id, ico, name, desc, topics } block.
-   Body accepts HTML: <h4>Heading</h4>, <ul><li>…</li></ul>,
-   <p class="lead">italic intro</p>, <div class="flag">red flag</div>,
-   <div class="pill">key point</div>, <details><summary>…</summary>
-   <div class="inner">…</div></details> for collapsible sub-sections.
-   The search box and menu update automatically.
+   PAGES  = the sections shown on the home page & top nav.
+            Each page pulls in one or more CATEGORIES (by id).
+   CATEGORIES = groups of topics. Each topic:
+       { t:"Title", body:`<h4>..</h4><ul><li>..</li></ul>` }
+     Dot-phrase topics use `copy` (plain text) instead of body:
+       { t:"Title", note:"optional intro", copy:`text to copy` }
+   To add a topic: copy a block. To add a category: copy a block
+   and add its id to a page's `cats`. Search updates automatically.
    ============================================================ */
+
+const PAGES = [
+  { id:"procedures", ico:"🩺", title:"Procedures", short:"Procedures",
+    desc:"Setup, landmarks, technique, and complications.", cats:["procedures"] },
+  { id:"pocus", ico:"📟", title:"Bedside Ultrasound", short:"PoCUS",
+    desc:"PoCUS foundations, lung, IVC/volume, fluid responsiveness.", cats:["pocus"] },
+  { id:"approaches", ico:"🧭", title:"Approaches", short:"Approaches",
+    desc:"Cross-cover calls, electrolytes & acid-base, neurology, common diagnoses, and goals of care.",
+    cats:["crosscover","lytes","neuro","diagnoses","goc"] },
+  { id:"meds", ico:"💊", title:"Medications & Ward Calls", short:"Meds & Calls",
+    desc:"Medication cheat sheet, palliative symptom management, and abbreviations.",
+    cats:["wardmeds","reference"] },
+  { id:"dotphrases", ico:"📝", title:"Dot Phrases", short:"Dot Phrases",
+    desc:"Copy-paste note & order templates for common IM issues.", cats:["dotphrases"] },
+];
+
 const CATEGORIES = [
 
 /* ========================= PROCEDURES ========================= */
@@ -275,7 +291,7 @@ const CATEGORIES = [
 
 /* ========================= CROSS-COVER / ACUTE ========================= */
 {
-  id:"crosscover", ico:"📟", name:"Cross-Cover & Acute Calls",
+  id:"crosscover", ico:"🌙", name:"Cross-Cover & Acute Calls",
   desc:"The pages you get overnight — a fast, structured first move.",
   topics:[
     {t:"Acute dyspnea", body:`
@@ -605,10 +621,10 @@ const CATEGORIES = [
   ]
 },
 
-/* ========================= PALLIATIVE & GOC ========================= */
+/* ========================= GOALS OF CARE ========================= */
 {
-  id:"pallgoc", ico:"🕊️", name:"Palliative & Goals of Care",
-  desc:"Symptom control and the serious-illness conversation.",
+  id:"goc", ico:"🕊️", name:"Goals of Care",
+  desc:"The serious-illness conversation.",
   topics:[
     {t:"Goals of care conversation", body:`
       <p class="lead">Serious Illness Conversation Guide (Bernacki). Most patients want the truth about prognosis; you won't harm by talking about EOL.</p>
@@ -625,28 +641,12 @@ const CATEGORIES = [
         <li><b>"I wish… I worry… I wonder…"</b> — align / be truthful / softly recommend</li>
       </ul>
       <div class="flag">Post-CPR survival to discharge: moderate frailty (CFS &gt;5) ~1%; advanced age ~3% survival, ~2% with neuro recovery.</div>`},
-
-    {t:"Palliative symptom management", body:`
-      <h4>Pain ladder</h4>
-      <ul>
-        <li>Non-opioid: round-the-clock acetaminophen; magnesium (migraine/neuropathic); gabapentin; steroids (pain/nausea/edema)</li>
-        <li><b>Avoid tramadol</b> (serotonin syndrome, hypoglycemia, ↓seizure threshold) and <b>T3/codeine</b> (variable metabolism) — just use morphine. <b>Hydromorphone ≈ 5× morphine.</b></li>
-        <li>Advanced: dexmedetomidine, lidocaine, ketamine, propofol, intrathecal pumps. Naloxone microdose 0.01–0.04</li>
-      </ul>
-      <h4>Nausea</h4>
-      <ul>
-        <li>Haloperidol 0.5–1 mg (very effective); olanzapine 2.5 mg qHS; metoclopramide (prokinetic — avoid in obstruction, don't combine with diphenhydramine); dexamethasone (esp. headache); Gravol (vertigo, sedating); ondansetron (constipation, ↑QTc); isopropyl-alcohol wipes (evidence-based)</li>
-      </ul>
-      <h4>Dyspnea & secretions</h4>
-      <ul><li>Opioids + bedside fan (trigeminal). Type 1 (hypopharyngeal) secretions → glycopyrrolate (suctioning ineffective)</li></ul>
-      <h4>End-of-life signs</h4>
-      <ul><li>Cyanosis (look around the knees), rhythmic mandibular breathing, loss of radial pulses (very sensitive), secretions. Use EOL order sets; pre-communicate double effect</li></ul>`},
   ]
 },
 
-/* ========================= REFERENCE ========================= */
+/* ========================= MEDICATIONS & SYMPTOM MGMT ========================= */
 {
-  id:"reference", ico:"💊", name:"Dosing & Reference",
+  id:"wardmeds", ico:"💊", name:"Medications & Symptom Management",
   desc:"Quick-grab regimens. Always confirm against local protocol / pharmacy.",
   topics:[
     {t:"Medication cheat sheet (by indication)", body:`
@@ -686,6 +686,29 @@ const CATEGORIES = [
         <li>Pain: acetaminophen RTC, morphine, hydromorphone (5× morphine); nausea: haloperidol 0.5–1 mg, olanzapine 2.5 qHS</li>
       </ul></div></details>`},
 
+    {t:"Palliative symptom management", body:`
+      <h4>Pain ladder</h4>
+      <ul>
+        <li>Non-opioid: round-the-clock acetaminophen; magnesium (migraine/neuropathic); gabapentin; steroids (pain/nausea/edema)</li>
+        <li><b>Avoid tramadol</b> (serotonin syndrome, hypoglycemia, ↓seizure threshold) and <b>T3/codeine</b> (variable metabolism) — just use morphine. <b>Hydromorphone ≈ 5× morphine.</b></li>
+        <li>Advanced: dexmedetomidine, lidocaine, ketamine, propofol, intrathecal pumps. Naloxone microdose 0.01–0.04</li>
+      </ul>
+      <h4>Nausea</h4>
+      <ul>
+        <li>Haloperidol 0.5–1 mg (very effective); olanzapine 2.5 mg qHS; metoclopramide (prokinetic — avoid in obstruction, don't combine with diphenhydramine); dexamethasone (esp. headache); Gravol (vertigo, sedating); ondansetron (constipation, ↑QTc); isopropyl-alcohol wipes (evidence-based)</li>
+      </ul>
+      <h4>Dyspnea & secretions</h4>
+      <ul><li>Opioids + bedside fan (trigeminal). Type 1 (hypopharyngeal) secretions → glycopyrrolate (suctioning ineffective)</li></ul>
+      <h4>End-of-life signs</h4>
+      <ul><li>Cyanosis (look around the knees), rhythmic mandibular breathing, loss of radial pulses (very sensitive), secretions. Use EOL order sets; pre-communicate double effect</li></ul>`},
+  ]
+},
+
+/* ========================= REFERENCE ========================= */
+{
+  id:"reference", ico:"📖", name:"Reference",
+  desc:"Abbreviations used across these notes.",
+  topics:[
     {t:"Abbreviations", body:`
       <ul>
         <li><b>DIMS</b> Drugs, Infection, Metabolic, Structural · <b>DIMS-R</b> + retention/constipation</li>
@@ -701,17 +724,160 @@ const CATEGORIES = [
   ]
 },
 
-/* ========================= ADMISSIONS (skeleton) ========================= */
+/* ========================= DOT PHRASES ========================= */
 {
-  id:"admissions", ico:"📥", name:"Admissions & Orders",
-  desc:"Skeleton for future notes — empty slots to fill in.",
+  id:"dotphrases", ico:"📝", name:"Dot Phrases",
+  desc:"Copy-paste note & order scaffolds. Fill the [ ] and *** placeholders. Verify all doses locally.",
   topics:[
-    {t:"Admission checklist"},
-    {t:"Admission order set (ADC VAN DIMLS)"},
-    {t:"VTE prophylaxis"},
-    {t:"Telemetry indications"},
-    {t:"How to sign out"},
-    {t:"Discharge planning & disposition"},
+    {t:".admit — Admission orders (ADC VAN DIMLS)", note:"General medicine admission order scaffold.", copy:
+`ADMISSION ORDERS
+Admit to: [ward/unit] under [service], MRP: [ ]
+Diagnosis: [primary] ; secondary: [ ]
+Condition: [stable / guarded]
+Vitals: routine q[ ]h ; telemetry: [yes/no + indication]
+Allergies: [ ]
+Nursing: I&O, daily weights, [foley/none], call MD if [SBP<90/>180, HR<50/>120, RR>24, SpO2<92%, T>38, UO<30cc/h]
+Diet: [regular / cardiac / diabetic / renal / NPO]
+Activity: [as tolerated / bedrest + fall precautions]
+IV fluids: [none / maintenance — type + rate]
+Investigations: bloodwork [CBC, lytes, ext lytes, Cr/urea, ___], imaging [ ], micro [ ]
+Drugs: home meds reconciled (see BPMR); new: [ ]
+VTE prophylaxis: [LMWH ___ / mechanical / none — reason]
+Code status: [ ] ; substitute decision maker: [ ]
+Consults: [ ]`},
+
+    {t:".hp — Admission H&P", note:"History & physical skeleton.", copy:
+`IDENTIFICATION: [age] [sex], [relevant baseline/PMHx], presenting with [ ].
+
+HPI:
+[ ]
+
+PAST MEDICAL/SURGICAL HX: [ ]
+MEDICATIONS: [ ]   ALLERGIES: [ ]
+SOCIAL: smoking [ ], alcohol [ ], substances [ ], living situation/supports [ ], baseline function [ ]
+FAMILY HX: [ ]
+ROS: [pertinent positives/negatives]
+
+EXAM:
+Vitals: T __ HR __ BP __ RR __ SpO2 __ (__ O2)
+General: [ ]
+CVS: [ ]   Resp: [ ]   Abdo: [ ]   Neuro: [ ]   Extremities/skin: [ ]
+
+INVESTIGATIONS: [labs, ECG, imaging]
+
+IMPRESSION: [age/sex] with [problem] likely due to [ ].
+
+PLAN (by problem):
+1. [problem] — [workup / treatment]
+2. [ ]
+Prophylaxis: VTE [ ], GI [ ]. Code status: [ ]. Dispo: [ ].`},
+
+    {t:".progress — Daily progress note (SOAP)", note:"Ward day-to-day note.", copy:
+`[Service] Progress Note — Day #[ ] of admission
+S: Overnight events [ ]. Patient reports [ ].
+O: Vitals: T__ HR__ BP__ RR__ SpO2__ (__O2). I/O [ ]. Weight [ ].
+   Exam: Gen [ ]; CVS [ ]; Resp [ ]; Abdo [ ]; Neuro [ ].
+   Labs/imaging today: [ ].
+A/P: [age/sex] with [problem], [improving/stable/worsening].
+1. [problem] — [assessment + plan]
+2. [ ]
+VTE prophylaxis: [ ]. Lines/tubes: [ ]. Code status: [ ]. Dispo: [ ].`},
+
+    {t:".chestpain — Chest pain (cross-cover)", note:"Called to bedside for chest pain.", copy:
+`CROSS-COVER NOTE — Chest pain
+Called at [time] for chest pain. Assessed at bedside.
+HPI: onset [ ], character [ ], radiation [ ], associated [SOB/diaphoresis/nausea], exertional [ ], prior similar [ ].
+Vitals: T__ HR__ BP__(both arms if dissection concern) RR__ SpO2__.
+Exam: CVS [ ], Resp [ ], legs [ ].
+r/o (3-2-1): ACS, dissection, pericarditis/tamponade | PE, PTX | esophageal.
+Done: ECG (compared to prior) [ ], troponin [ ], CXR [ ]. Given: [ASA / NTG / analgesia].
+Impression: [ ].
+Plan: [serial ECG/trop, tele, cardiology if ___, reassess]. Will update MRP.`},
+
+    {t:".sob — Shortness of breath (cross-cover)", note:"Called to bedside for dyspnea.", copy:
+`CROSS-COVER NOTE — Dyspnea
+Called at [time] for SOB / rising O2 requirement (from __ to __).
+HPI: onset [sudden/gradual], orthopnea/PND [ ], cough/sputum [ ], chest pain [ ], leg swelling [ ].
+Vitals: T__ HR__ BP__ RR__ SpO2__ (__ O2). Work of breathing: [ ].
+Exam: Resp [air entry, crackles, wheeze], CVS [JVP, edema], legs [ ].
+DDx: CHF, PNA, COPD/asthma, PE, PTX, aspiration, anaphylaxis, ACS.
+Done: VBG/ABG [ ], ECG [ ], CXR [ ], BNP/trop [ ], PoCUS [ ]. Given: [O2 titrated / diuretic / bronchodilator].
+Impression: [ ].
+Plan: [O2 target ___, treat cause, reassess, escalate/ICU if ___].`},
+
+    {t:".ams — Altered mental status / delirium", note:"Called for confusion/agitation.", copy:
+`CROSS-COVER NOTE — Altered mental status
+Called at [time] for [confusion/agitation]. Baseline cognition: [ ].
+Vitals incl. glucose: T__ HR__ BP__ RR__ SpO2__ CBG__.
+Exam: LOC [ ]; attention (WORLD backwards / months backwards) [ ]; focal deficits [ ]; CAM [ ].
+DIMS-R workup: Drugs (new/sedating, opioids, benzo/EtOH withdrawal) [ ]; Infection (urine, chest, lines) [ ]; Metabolic (glucose, Na, Ca, uremia, O2/CO2) [ ]; Structural (focal signs → imaging) [ ]; Retention/constipation [ ].
+Done: [glucose, lytes, CBC, ___].
+Impression: [likely hypo/hyperactive delirium 2° to ___ vs ___].
+Plan: treat cause; non-pharm measures; sedation if unsafe: quetiapine 6.25–12.5 / loxapine 2.5 IM PRN. Reassess.`},
+
+    {t:".aki — Acute kidney injury", note:"New AKI workup note.", copy:
+`AKI NOTE
+Baseline Cr [ ] → current [ ] ([__ x baseline], KDIGO stage [ ]). UO: [ ] cc (oliguric if <500/day).
+Pre-renal: volume/fluid losses [ ], effective volume (CHF/cirrhosis/sepsis) [ ], meds (NSAID/ACEi-ARB/diuretic/SGLT2i) [ ].
+Renal: recent contrast [ ], nephrotoxins [ ], sepsis/ischemia [ ], urine sediment [ ].
+Post-renal: retention/obstruction — bladder scan [ ], foley [ ], renal US [ ].
+Done: lytes, urea/Cr, urinalysis + micro, urine lytes (FeNa/FeUrea), bladder scan, renal US [ ].
+Impression: [pre-renal / ATN / obstructive / other].
+Plan: hold nephrotoxins, adjust renally-cleared meds, [fluids vs diurese], monitor lytes/UO, nephro if [ ].`},
+
+    {t:".sepsis — Sepsis / infection", note:"Suspected sepsis bundle.", copy:
+`SEPSIS NOTE
+Suspected source: [urine / chest / abdo / skin / line / CNS / unknown]. qSOFA/NEWS: [ ].
+Vitals: T__ HR__ BP__ (MAP __) RR__ SpO2__. Lactate: [ ].
+Done: cultures x2 (+ site-specific) BEFORE abx, CBC, lytes, Cr, lactate, VBG, urinalysis, CXR [ ].
+Given: empiric antibiotics [___ per local guideline for suspected source], IV fluids [___ cc/kg balanced crystalloid], source control [ ].
+Impression: [sepsis 2° to ___].
+Plan: reassess perfusion/lactate; vasopressors + ICU if hypotensive despite fluids; de-escalate abx per cultures at 48h; document source-control plan.`},
+
+    {t:".lytes — Electrolyte repletion orders", note:"Common ward repletion scaffold — confirm renal function.", copy:
+`ELECTROLYTE REPLETION (confirm renal function first)
+Potassium: [ ] — target [ ]. PO KCl preferred; IV max 40 mmol/L peripheral, ≤10 mmol/h (≤20 via CVC). Replete Mg alongside.
+Magnesium: [ ] — MgSO4 [ ] g IV.
+Phosphate: [ ] — replace if <1 or symptomatic (NaPhos/KPhos).
+Calcium: [corrected __] — [ ].
+Recheck lytes at [ ]. Hold/renally-dose if AKI/CKD.`},
+
+    {t:".goc — Goals of care / code status note", note:"Document a GoC conversation.", copy:
+`GOALS OF CARE / CODE STATUS NOTE
+Present: [patient / SDM: name, relationship]. Capacity: [ ].
+Understanding of illness: [ ]. Trajectory discussed: [ ].
+Values/goals: [ ]. Fears / things to avoid: [ ].
+Discussed treatment ladder: comfort → medical management → ICU → intubation → CPR.
+Outcome / agreed plan:
+  - Resuscitation (CPR): [Full / DNR]
+  - Intubation / ICU: [yes / no / trial]
+  - Escalation ceiling: [ward-based medical management / etc.]
+Recommendation given (aligned to goals): [ ].
+Follow-up: revisit as needed; family/SDM informed. Documented in chart.`},
+
+    {t:".procnote — Procedure note", note:"Generic bedside procedure note.", copy:
+`PROCEDURE NOTE
+Procedure: [ ]. Date/time: [ ]. Service: [ ]. Supervised by: [ ].
+Indication: [ ]. Consent: obtained (risks/benefits/alternatives discussed).
+Pre-procedure: timeout done; site confirmed; relevant labs [INR/plt] [ ].
+Technique: sterile prep + drape; local anaesthetic [ ]; ultrasound guidance [yes/no]; [details, attempts].
+Findings: [fluid appearance / etc.]. Volume removed: [ ].
+Samples sent: [ ].
+Complications: [none / ___]. EBL: [ ].
+Post: [ CXR ordered / patient tolerated well ]. Plan: [ ].`},
+
+    {t:".dc — Discharge summary", note:"Discharge summary skeleton.", copy:
+`DISCHARGE SUMMARY
+Admitting/most responsible diagnosis: [ ]. Secondary diagnoses: [ ].
+Admission date: [ ] | Discharge date: [ ] | Disposition: [home / rehab / LTC].
+Brief hospital course (by problem):
+1. [ ]
+2. [ ]
+Procedures/consults: [ ].
+Discharge meds: [reconciled — new / changed / stopped].
+Pending results / follow-up needed: [ ].
+Follow-up appointments: [MRP/specialty, when].
+Patient instructions / red flags to return: [ ].`},
   ]
 },
 
