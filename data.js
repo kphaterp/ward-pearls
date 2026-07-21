@@ -402,6 +402,57 @@ const CATEGORIES = [
   ]
 },
 
+/* ========================= NEUROLOGY ========================= */
+{
+  id:"neuro", ico:"🧠", name:"Neurology",
+  desc:"Mental status, the DIMS approach, and seizure/epilepsy workup.",
+  topics:[
+    {t:"Mental status exam & DIMS", body:`
+      <p class="lead">Gestalt of normal vs abnormal is very sensitive — "mental status grossly normal." Separate <b>attention</b> from <b>language</b> (drives DIMS vs structural workup).</p>
+      <h4>Components</h4>
+      <ul>
+        <li><b>LOC</b>: awake / drowsy but easily roused / drowsy hard to rouse (sternal rub) / unarousable</li>
+        <li><b>Attention</b>: tracking, obeying commands (tell — don't show; avoid reflexive grip); orientation; serial 7s / days / <b>months backwards</b>; hemineglect ("whose arm is this?")</li>
+        <li><b>Language</b>: fluency, naming (elbow, glasses, pinky), comprehension (1–3 step commands), repetition</li>
+        <li><b>Memory</b> (higher order): delayed recall; remote (last 3 presidents, world events)</li>
+      </ul>
+      <h4>DIMS — for diffuse processes / inattention</h4>
+      <ul>
+        <li><b>D</b>rugs, non-CNS <b>I</b>nfection, <b>M</b>etabolic, <b>S</b>tructural (+ add epilepsy)</li>
+        <li>Drugs / non-CNS infection / metabolic usually <b>don't</b> give focal deficits</li>
+        <li>Structural lesions usually don't give <b>isolated inattention</b></li>
+        <li><b>Aphasia is highly localizing</b> → EEG and/or CT/CTA</li>
+        <li>Isolated amnesia → short ddx: TGA, opioid amnestic syndrome, neurodegenerative</li>
+      </ul>
+      <div class="pill">Calling neurology about a confused patient: isolate attention, language, memory. GCS is mainly useful in acute/trauma/triage.</div>`},
+
+    {t:"Seizures & epilepsy", body:`
+      <p class="lead">Clinical diagnosis — no confirmatory or exclusion test.</p>
+      <h4>Is it a seizure?</h4>
+      <ul>
+        <li>Suggestive: stereotyped, synchronous, intrusive, non-suppressible, bilateral involvement with lost awareness</li>
+        <li>Aura (usually temporal): abnormal smells/sounds, déjà vu, fear/panic, rising sensation</li>
+        <li>During: forced head/eye turn, unilateral stiffening, lip-smacking, automatisms, speech arrest, tonic-clonic</li>
+        <li>Post-ictal: confusion (duration ~ spell length), <b>lateral</b> tongue bite, incontinence, transient deficits, Todd's paralysis (asymmetric reflexes, upgoing toe)</li>
+        <li>Mimics: syncope (pallor, hyperventilation, classic triggers), panic attack</li>
+      </ul>
+      <h4>Investigations (low yield)</h4>
+      <ul><li>CK, lactate, prolactin, low phosphate — non-specific. <b>EEG is not confirmatory</b>; improve yield: EEG close to spell, sleep deprivation, hyperventilation, photic; 3 EEGs. Drug levels validated as troughs; free levels for protein-bound (VPA, carbamazepine, phenytoin)</li></ul>
+      <h4>Epilepsy</h4>
+      <ul>
+        <li>≥2 unprovoked seizures &gt;24 h apart, OR 1 unprovoked with ≥60% recurrence risk</li>
+        <li>After 1st unprovoked seizure: no treatment (doesn't reduce lifetime risk beyond ~2 y); MRI + EEG standard</li>
+        <li>Threshold-lowering: metabolic (Na, glucose, Ca), drugs (stimulants, alcohol/benzo withdrawal), infection; meds — <b>imipenem, clozapine, bupropion, 4th/5th-gen cephalosporins</b></li>
+      </ul>
+      <h4>Rescue & ASM</h4>
+      <ul>
+        <li>Most abort in 1–2 min. Rescue if: convulsive + resp/hemodynamic compromise, &gt;5 min, ≥3 in 30 min, or status</li>
+        <li>Lorazepam 1–2 mg IV (4 mg, or midazolam 10 mg IM, for status). Status: benzo → benzo → IV ASM → IV ASM → ICU</li>
+        <li>ASM by comorbidity: migraine (VPA, keppra, topiramate), bipolar (VPA, lamotrigine), trigeminal neuralgia (carbamazepine); mind interactions, organ toxicity, teratogenicity</li>
+      </ul>`},
+  ]
+},
+
 /* ========================= COMMON DIAGNOSES ========================= */
 {
   id:"diagnoses", ico:"📋", name:"Common Diagnoses",
@@ -446,7 +497,23 @@ const CATEGORIES = [
       </ul>
       <h4>Also</h4>
       <ul><li>Ramipril 2.5–5 mg BID (≤10/day); high-intensity statin (atorvastatin 80 / rosuvastatin 40); cardiac rehab</li>
-      <li>Vitals: bradycardia (vagal / AV block) or tachycardia (poor prognosis). RV infarct = preload dependent → cautious fluids, limit nitrates/BB. Don't target 100% O₂</li></ul>`},
+      <li>Vitals: bradycardia (vagal / AV block) or tachycardia (poor prognosis). RV infarct = preload dependent → cautious fluids, limit nitrates/BB. Don't target 100% O₂</li></ul>
+      <h4>MI definition & types</h4>
+      <ul>
+        <li>MI = troponin &gt;99th percentile <b>+ ≥1 of</b>: ischemic symptoms, new ischemic ECG changes, pathologic Q waves, new RWMA / loss of viable myocardium, or coronary thrombus on angiography</li>
+        <li>Type 1: plaque rupture/dissection/erosion. Type 2: supply-demand mismatch (spasm, embolism, anemia, arrhythmia, HTN/hypotension). Types 3–5: sudden death / PCI / CABG-related</li>
+        <li>STEMI: compare ST to the TP line; if remote from PCI → fibrinolysis within 30 min. ECG evolution: normal → hyperacute T → ST elevation → Q wave + inverted T → resolves. NSTEMI: ST depressions/TWI <b>don't localize</b></li>
+      </ul>
+      <details><summary>ACS consult template</summary><div class="inner">
+        <ul>
+          <li><b>ID</b> · <b>PMHx</b> — primary cardiologist, prior testing (stress, CCTA, cath, echo, Holter)</li>
+          <li>Cardiac risk factors · meds/allergies · <b>FHx</b> (premature ASCVD, sudden death) · social (smoking, driving)</li>
+          <li><b>Physical</b>: vitals, cardioresp, PoCUS · <b>Investigations</b>: labs/CXR, ECG (baseline, current, serial)</li>
+          <li><b>Assessment</b>: is this type-1 ACS? Cardiac chest pain + troponin rise ±fall + dynamic/concerning ECG. If not → discuss non-invasive risk stratification with fellow/staff</li>
+          <li>Risk stratify: Killip class, TIMI, GRACE. Highlight therapies already given (ASA? clopidogrel/ticagrelor? enox?)</li>
+          <li>Current status: stable/unstable · arrhythmia, decompensated HF, cardiogenic shock · chest pain ongoing / provokable / free</li>
+        </ul>
+      </div></details>`},
 
     {t:"GI bleed", body:`
       <h4>Risk & transfusion</h4>
