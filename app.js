@@ -23,7 +23,7 @@
   function buildTopNav(active) {
     const bar = document.getElementById("topbar");
     if (!bar) return;
-    let html = `<a class="brand" href="index.html">Ward Pearls</a>`;
+    let html = `<a class="brand" href="index.html">Kiran P, MD</a>`;
     html += `<a class="navlink${active === "home" ? " active" : ""}" href="index.html">Home</a>`;
     PAGES.forEach(p => {
       html += `<a class="navlink${active === p.id ? " active" : ""}" href="${p.id}.html">${p.short || p.title}</a>`;

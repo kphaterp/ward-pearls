@@ -1,7 +1,7 @@
 /* ============================================================
-   WARD PEARLS — CONTENT
+   KIRAN P, MD — WARD REFERENCE — CONTENT
    ------------------------------------------------------------
-   PAGES  = the sections shown on the home page & top nav.
+   PAGES  = sections shown on the home page & top nav.
             Each page pulls in one or more CATEGORIES (by id).
    CATEGORIES = groups of topics. Each topic:
        { t:"Title", body:`<h4>..</h4><ul><li>..</li></ul>` }
@@ -20,8 +20,14 @@ const PAGES = [
     desc:"Cross-cover calls, electrolytes & acid-base, neurology, common diagnoses, and goals of care.",
     cats:["crosscover","lytes","neuro","diagnoses","goc"] },
   { id:"meds", ico:"💊", title:"Medications & Ward Calls", short:"Meds & Calls",
-    desc:"Medication cheat sheet, palliative symptom management, and abbreviations.",
+    desc:"Medication cheat sheet, common symptoms & management, and abbreviations.",
     cats:["wardmeds","reference"] },
+  { id:"trials", ico:"📊", title:"Landmark Trials", short:"Trials",
+    desc:"Practice-changing studies by system — the bottom line and a link to each.",
+    cats:["tr-cards","tr-pulm","tr-renal","tr-endo","tr-gi","tr-id","tr-heme","tr-neuro"] },
+  { id:"pearls", ico:"💡", title:"Clinical Pearls", short:"Pearls",
+    desc:"Pearls picked up on the wards, organized by system. Add your own in data.js.",
+    cats:["pl-cards","pl-pulm","pl-renal","pl-endo","pl-gi","pl-id","pl-heme","pl-neuro","pl-gen"] },
   { id:"dotphrases", ico:"📝", title:"Dot Phrases", short:"Dot Phrases",
     desc:"Copy-paste note & order templates for common IM issues.", cats:["dotphrases"] },
 ];
@@ -686,7 +692,7 @@ const CATEGORIES = [
         <li>Pain: acetaminophen RTC, morphine, hydromorphone (5× morphine); nausea: haloperidol 0.5–1 mg, olanzapine 2.5 qHS</li>
       </ul></div></details>`},
 
-    {t:"Palliative symptom management", body:`
+    {t:"Common symptoms and management", body:`
       <h4>Pain ladder</h4>
       <ul>
         <li>Non-opioid: round-the-clock acetaminophen; magnesium (migraine/neuropathic); gabapentin; steroids (pain/nausea/edema)</li>
@@ -724,65 +730,156 @@ const CATEGORIES = [
   ]
 },
 
+/* ========================= TRIALS ========================= */
+{
+  id:"tr-cards", ico:"🫀", name:"Cardiology",
+  desc:"",
+  topics:[
+    {t:"SPRINT (2015)", body:`<p class="lead">Intensive SBP target &lt;120 vs &lt;140 in high-risk non-diabetic hypertensives.</p><h4>Bottom line</h4><ul><li>↓ CV events and all-cause mortality; more AKI, hypotension, and syncope</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=SPRINT+intensive+blood+pressure+control" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"RALES (1999)", body:`<p class="lead">Spironolactone added to standard therapy in severe HFrEF.</p><h4>Bottom line</h4><ul><li>~30% ↓ mortality; watch for hyperkalemia/gynecomastia</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=RALES+spironolactone+heart+failure" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"PARADIGM-HF (2014)", body:`<p class="lead">Sacubitril/valsartan (ARNI) vs enalapril in HFrEF.</p><h4>Bottom line</h4><ul><li>↓ CV death & HF hospitalization (~20%) — established ARNI as first-line</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=PARADIGM-HF+sacubitril+valsartan" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"DAPA-HF (2019)", body:`<p class="lead">Dapagliflozin (SGLT2i) in HFrEF, with and without diabetes.</p><h4>Bottom line</h4><ul><li>↓ worsening HF and CV death — SGLT2i now a pillar of HFrEF therapy</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=DAPA-HF+dapagliflozin+heart+failure" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"ISCHEMIA (2020)", body:`<p class="lead">Stable CAD + moderate-severe ischemia: routine invasive vs optimal medical therapy.</p><h4>Bottom line</h4><ul><li>No reduction in CV events/death with routine invasive strategy — OMT first is reasonable</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ISCHEMIA+trial+invasive+stable+coronary" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"AFFIRM (2002)", body:`<p class="lead">Rate vs rhythm control in atrial fibrillation.</p><h4>Bottom line</h4><ul><li>No survival difference — rate control a reasonable default in many patients</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=AFFIRM+rate+rhythm+atrial+fibrillation" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"COMPASS (2017)", body:`<p class="lead">Rivaroxaban 2.5 mg BID + ASA vs ASA alone in stable CAD/PAD.</p><h4>Bottom line</h4><ul><li>↓ MACE and mortality; more major bleeding</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=COMPASS+rivaroxaban+aspirin+stable+cardiovascular" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-pulm", ico:"🫁", name:"Pulmonary & Critical Care",
+  desc:"",
+  topics:[
+    {t:"ARDSNet / ARMA (2000)", body:`<p class="lead">Low tidal volume (6 mL/kg) vs 12 mL/kg in ARDS.</p><h4>Bottom line</h4><ul><li>↓ mortality — the foundation of lung-protective ventilation</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ARDS+network+low+tidal+volume+ventilation" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"PROSEVA (2013)", body:`<p class="lead">Prone positioning ≥16 h/day in severe ARDS (P/F &lt;150).</p><h4>Bottom line</h4><ul><li>Significant ↓ mortality — prone early in severe ARDS</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=PROSEVA+prone+positioning+ARDS" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"RECOVERY — Dexamethasone (2021)", body:`<p class="lead">Dexamethasone in COVID-19 requiring oxygen or ventilation.</p><h4>Bottom line</h4><ul><li>↓ mortality in those needing O₂/ventilation; no benefit (possible harm) if no O₂ need</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=RECOVERY+dexamethasone+covid-19" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"ProCESS / ARISE / ProMISe (2014–15)", body:`<p class="lead">Protocolized early goal-directed therapy (EGDT) vs usual care in septic shock.</p><h4>Bottom line</h4><ul><li>No benefit of protocolized EGDT over good usual care — retired the mandatory Rivers protocol</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ProCESS+ARISE+ProMISe+early+goal+directed+therapy+sepsis" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"TTM (2013)", body:`<p class="lead">Targeted temperature 33 °C vs 36 °C after out-of-hospital cardiac arrest.</p><h4>Bottom line</h4><ul><li>No difference in survival/neuro outcome — 36 °C acceptable; avoid fever</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=targeted+temperature+management+33+36+cardiac+arrest" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-renal", ico:"🫘", name:"Nephrology",
+  desc:"",
+  topics:[
+    {t:"CREDENCE (2019)", body:`<p class="lead">Canagliflozin in diabetic CKD with albuminuria.</p><h4>Bottom line</h4><ul><li>↓ kidney failure, doubling of creatinine, and CV events</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=CREDENCE+canagliflozin+diabetic+kidney" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"DAPA-CKD (2020)", body:`<p class="lead">Dapagliflozin in CKD, with and without diabetes.</p><h4>Bottom line</h4><ul><li>↓ CKD progression and mortality — SGLT2i for proteinuric CKD broadly</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=DAPA-CKD+dapagliflozin+chronic+kidney+disease" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"STARRT-AKI (2020)", body:`<p class="lead">Accelerated vs standard timing of renal replacement therapy in AKI.</p><h4>Bottom line</h4><ul><li>No mortality benefit to early RRT; more dialysis dependence — wait for a clear indication</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=STARRT-AKI+timing+renal+replacement+therapy" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-endo", ico:"🍬", name:"Endocrine",
+  desc:"",
+  topics:[
+    {t:"UKPDS (1998)", body:`<p class="lead">Intensive glucose control in newly diagnosed type 2 diabetes.</p><h4>Bottom line</h4><ul><li>↓ microvascular complications; legacy effect over long-term follow-up</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=UKPDS+intensive+blood+glucose+type+2+diabetes" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"ACCORD (2008)", body:`<p class="lead">Intensive glucose (HbA1c &lt;6%) vs standard in high-risk T2DM.</p><h4>Bottom line</h4><ul><li>↑ mortality with intensive control — stopped early; avoid over-tight targets in high-risk patients</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ACCORD+intensive+glucose+lowering+type+2+diabetes" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"EMPA-REG OUTCOME (2015)", body:`<p class="lead">Empagliflozin in T2DM with established CV disease.</p><h4>Bottom line</h4><ul><li>↓ CV death and HF hospitalization — first SGLT2i CV-outcome benefit</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=EMPA-REG+OUTCOME+empagliflozin" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"LEADER (2016)", body:`<p class="lead">Liraglutide (GLP-1 RA) in T2DM at high CV risk.</p><h4>Bottom line</h4><ul><li>↓ CV events and mortality — GLP-1 RA CV benefit</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=LEADER+liraglutide+cardiovascular+outcomes" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-gi", ico:"🫄", name:"GI & Hepatology",
+  desc:"",
+  topics:[
+    {t:"Transfusion in GI bleed — Villanueva (2013)", body:`<p class="lead">Restrictive (Hb &lt;70) vs liberal (Hb &lt;90) transfusion in acute UGIB.</p><h4>Bottom line</h4><ul><li>Restrictive strategy ↑ survival and ↓ rebleeding — basis of the Hb &lt;70 threshold</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=Villanueva+transfusion+strategies+acute+upper+gastrointestinal+bleeding" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"Early TIPS — García-Pagán (2010)", body:`<p class="lead">Early TIPS vs standard therapy in high-risk cirrhotic variceal bleeding.</p><h4>Bottom line</h4><ul><li>↓ rebleeding and mortality — consider early TIPS in high-risk patients</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=early+TIPS+variceal+bleeding+cirrhosis+Garcia-Pagan" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"STOPAH (2015)", body:`<p class="lead">Prednisolone and/or pentoxifylline in severe alcoholic hepatitis.</p><h4>Bottom line</h4><ul><li>Prednisolone gave a modest 28-day survival signal (not significant overall); no long-term benefit; pentoxifylline ineffective</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=STOPAH+prednisolone+pentoxifylline+alcoholic+hepatitis" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-id", ico:"🦠", name:"Infectious Disease",
+  desc:"",
+  topics:[
+    {t:"POET (2019)", body:`<p class="lead">Oral step-down vs continued IV antibiotics for stable left-sided endocarditis.</p><h4>Bottom line</h4><ul><li>Oral step-down non-inferior in selected, stabilized patients</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=POET+partial+oral+antibiotic+endocarditis" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"OVIVA (2019)", body:`<p class="lead">Oral vs IV antibiotics for bone and joint infection (first 6 weeks).</p><h4>Bottom line</h4><ul><li>Oral non-inferior to IV — supports earlier oral switch in bone/joint infection</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=OVIVA+oral+versus+intravenous+antibiotics+bone+joint+infection" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-heme", ico:"🩸", name:"Hematology",
+  desc:"",
+  topics:[
+    {t:"TRICC (1999)", body:`<p class="lead">Restrictive (Hb 70) vs liberal (Hb 100) transfusion in critically ill patients.</p><h4>Bottom line</h4><ul><li>Restrictive at least as good — established restrictive transfusion in the ICU</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=TRICC+transfusion+requirements+critical+care" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"RE-LY (2009)", body:`<p class="lead">Dabigatran vs warfarin in non-valvular atrial fibrillation.</p><h4>Bottom line</h4><ul><li>Dabigatran 150 mg ↓ stroke vs warfarin — first DOAC vs warfarin AF trial</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=RE-LY+dabigatran+warfarin+atrial+fibrillation" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"ARISTOTLE (2011)", body:`<p class="lead">Apixaban vs warfarin in atrial fibrillation.</p><h4>Bottom line</h4><ul><li>↓ stroke, ↓ major bleeding, and ↓ mortality vs warfarin</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=ARISTOTLE+apixaban+warfarin+atrial+fibrillation" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+{
+  id:"tr-neuro", ico:"🧠", name:"Neurology",
+  desc:"",
+  topics:[
+    {t:"NINDS (1995)", body:`<p class="lead">IV tPA within 3 h of acute ischemic stroke.</p><h4>Bottom line</h4><ul><li>Improved 90-day functional outcomes — launched thrombolysis for stroke</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=NINDS+tissue+plasminogen+activator+acute+ischemic+stroke" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"DAWN (2018)", body:`<p class="lead">Mechanical thrombectomy 6–24 h post-stroke with clinical-imaging mismatch.</p><h4>Bottom line</h4><ul><li>Large benefit — extended the thrombectomy window in selected patients</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=DAWN+thrombectomy+stroke+mismatch" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+    {t:"POINT / CHANCE (2018 / 2013)", body:`<p class="lead">Short-course DAPT (ASA + clopidogrel) after minor stroke or high-risk TIA.</p><h4>Bottom line</h4><ul><li>↓ recurrent stroke; benefit early, so keep the course short (~21 days) to limit bleeding</li></ul><p><a href="https://pubmed.ncbi.nlm.nih.gov/?term=POINT+clopidogrel+aspirin+minor+stroke+TIA" target="_blank" rel="noopener">View on PubMed →</a></p>`},
+  ]
+},
+
+/* ========================= CLINICAL PEARLS (by system — add your own) ========================= */
+{
+  id:"pl-cards", ico:"🫀", name:"Cardiology",
+  desc:"",
+  topics:[
+    {t:"AF with RVR — find the driver", body:`<ul><li>New AF with RVR that won't rate-control? Hunt for the driver — sepsis, PE, pain, hypovolemia, thyrotoxicosis — before piling on more nodal agents.</li></ul>`},
+  ]
+},
+{
+  id:"pl-pulm", ico:"🫁", name:"Pulmonary",
+  desc:"",
+  topics:[
+    {t:"COPD exacerbation — think PE", body:`<ul><li>~1 in 4 COPD exacerbations has a concurrent PE. Keep it on the differential when the picture doesn't quite fit.</li></ul>`},
+  ]
+},
+{
+  id:"pl-renal", ico:"🫘", name:"Nephrology",
+  desc:"",
+  topics:[
+    {t:"Muddy-brown casts = ATN", body:`<ul><li>Granular ("muddy-brown") casts plus no response to a fluid challenge point to ATN over pre-renal AKI.</li></ul>`},
+  ]
+},
+{
+  id:"pl-endo", ico:"🍬", name:"Endocrine",
+  desc:"",
+  topics:[
+    {t:"Euglycemic DKA on SGLT2i", body:`<ul><li>Euglycemic DKA is real on SGLT2 inhibitors — check a gas and ketones even when the glucose looks normal.</li></ul>`},
+  ]
+},
+{
+  id:"pl-gi", ico:"🫄", name:"GI & Hepatology",
+  desc:"",
+  topics:[
+    {t:"Cirrhotic GI bleed → antibiotics", body:`<ul><li>Every cirrhotic with a GI bleed gets prophylactic ceftriaxone — it lowers mortality, not just infection risk.</li></ul>`},
+  ]
+},
+{
+  id:"pl-id", ico:"🦠", name:"Infectious Disease",
+  desc:"",
+  topics:[
+    {t:"Neutropenic fever — 60 minutes", body:`<ul><li>Neutropenic fever is an emergency: draw cultures and give the first dose of empiric anti-pseudomonal beta-lactam within 60 minutes.</li></ul>`},
+  ]
+},
+{
+  id:"pl-heme", ico:"🩸", name:"Heme / Onc",
+  desc:"",
+  topics:[
+    {t:"Smear early in cytopenias", body:`<ul><li>Order a peripheral smear early in any new cytopenia — schistocytes flip the workup toward a thrombotic microangiopathy.</li></ul>`},
+  ]
+},
+{
+  id:"pl-neuro", ico:"🧠", name:"Neurology",
+  desc:"",
+  topics:[
+    {t:"Check glucose in stroke", body:`<ul><li>Always check a glucose in suspected stroke — hypoglycemia is a classic, reversible stroke mimic.</li></ul>`},
+  ]
+},
+{
+  id:"pl-gen", ico:"⭐", name:"General / Cross-cover",
+  desc:"",
+  topics:[
+    {t:"Cross-cover is about trends", body:`<ul><li>Overnight cross-cover is about trends: is this new, or the same as it was this morning? Compare before you act.</li></ul>`},
+  ]
+},
+
 /* ========================= DOT PHRASES ========================= */
 {
   id:"dotphrases", ico:"📝", name:"Dot Phrases",
   desc:"Copy-paste note & order scaffolds. Fill the [ ] and *** placeholders. Verify all doses locally.",
   topics:[
-    {t:".admit — Admission orders (ADC VAN DIMLS)", note:"General medicine admission order scaffold.", copy:
-`ADMISSION ORDERS
-Admit to: [ward/unit] under [service], MRP: [ ]
-Diagnosis: [primary] ; secondary: [ ]
-Condition: [stable / guarded]
-Vitals: routine q[ ]h ; telemetry: [yes/no + indication]
-Allergies: [ ]
-Nursing: I&O, daily weights, [foley/none], call MD if [SBP<90/>180, HR<50/>120, RR>24, SpO2<92%, T>38, UO<30cc/h]
-Diet: [regular / cardiac / diabetic / renal / NPO]
-Activity: [as tolerated / bedrest + fall precautions]
-IV fluids: [none / maintenance — type + rate]
-Investigations: bloodwork [CBC, lytes, ext lytes, Cr/urea, ___], imaging [ ], micro [ ]
-Drugs: home meds reconciled (see BPMR); new: [ ]
-VTE prophylaxis: [LMWH ___ / mechanical / none — reason]
-Code status: [ ] ; substitute decision maker: [ ]
-Consults: [ ]`},
-
-    {t:".hp — Admission H&P", note:"History & physical skeleton.", copy:
-`IDENTIFICATION: [age] [sex], [relevant baseline/PMHx], presenting with [ ].
-
-HPI:
-[ ]
-
-PAST MEDICAL/SURGICAL HX: [ ]
-MEDICATIONS: [ ]   ALLERGIES: [ ]
-SOCIAL: smoking [ ], alcohol [ ], substances [ ], living situation/supports [ ], baseline function [ ]
-FAMILY HX: [ ]
-ROS: [pertinent positives/negatives]
-
-EXAM:
-Vitals: T __ HR __ BP __ RR __ SpO2 __ (__ O2)
-General: [ ]
-CVS: [ ]   Resp: [ ]   Abdo: [ ]   Neuro: [ ]   Extremities/skin: [ ]
-
-INVESTIGATIONS: [labs, ECG, imaging]
-
-IMPRESSION: [age/sex] with [problem] likely due to [ ].
-
-PLAN (by problem):
-1. [problem] — [workup / treatment]
-2. [ ]
-Prophylaxis: VTE [ ], GI [ ]. Code status: [ ]. Dispo: [ ].`},
-
-    {t:".progress — Daily progress note (SOAP)", note:"Ward day-to-day note.", copy:
-`[Service] Progress Note — Day #[ ] of admission
-S: Overnight events [ ]. Patient reports [ ].
-O: Vitals: T__ HR__ BP__ RR__ SpO2__ (__O2). I/O [ ]. Weight [ ].
-   Exam: Gen [ ]; CVS [ ]; Resp [ ]; Abdo [ ]; Neuro [ ].
-   Labs/imaging today: [ ].
-A/P: [age/sex] with [problem], [improving/stable/worsening].
-1. [problem] — [assessment + plan]
-2. [ ]
-VTE prophylaxis: [ ]. Lines/tubes: [ ]. Code status: [ ]. Dispo: [ ].`},
-
     {t:".chestpain — Chest pain (cross-cover)", note:"Called to bedside for chest pain.", copy:
 `CROSS-COVER NOTE — Chest pain
 Called at [time] for chest pain. Assessed at bedside.
@@ -865,19 +962,6 @@ Findings: [fluid appearance / etc.]. Volume removed: [ ].
 Samples sent: [ ].
 Complications: [none / ___]. EBL: [ ].
 Post: [ CXR ordered / patient tolerated well ]. Plan: [ ].`},
-
-    {t:".dc — Discharge summary", note:"Discharge summary skeleton.", copy:
-`DISCHARGE SUMMARY
-Admitting/most responsible diagnosis: [ ]. Secondary diagnoses: [ ].
-Admission date: [ ] | Discharge date: [ ] | Disposition: [home / rehab / LTC].
-Brief hospital course (by problem):
-1. [ ]
-2. [ ]
-Procedures/consults: [ ].
-Discharge meds: [reconciled — new / changed / stopped].
-Pending results / follow-up needed: [ ].
-Follow-up appointments: [MRP/specialty, when].
-Patient instructions / red flags to return: [ ].`},
   ]
 },
 
