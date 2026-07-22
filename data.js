@@ -1,3 +1,4 @@
+
 /* ============================================================
    KIRAN P, MD — WARD REFERENCE — CONTENT
    ------------------------------------------------------------
@@ -43,10 +44,10 @@ const CATEGORIES = [
       <h4>Before every procedure</h4>
       <ul>
         <li>Bloodwork: CBC, coags/INR, platelets</li>
-        <li>Review meds — anticoagulants/antiplatelets & last dose (LMWH/DOAC hold times)</li>
+        <li>Review meds — Are they taking anticoagulants/antiplatelets & what was the last dose (LMWH/DOAC hold times)</li>
         <li>Indication utility: <em>Do I need this now? Can it wait? Will it change management?</em></li>
         <li>Informed consent signed & on chart</li>
-        <li>Adjust bed to proper height; position patient</li>
+        <li>Adjust bed to proper height and properly position patient</li>
       </ul>
       <h4>After</h4>
       <ul>
@@ -78,37 +79,44 @@ const CATEGORIES = [
       </ul>
       <h4>Catheter length by site</h4>
       <ul><li>Right IJ ≈ <b>16 cm</b> · Left IJ ≈ <b>20 cm</b> · Femoral ≈ <b>24 cm</b></li></ul>
-      <h4>Kit / setup</h4>
+      <h4>Preparation</h4>
       <ul>
-        <li>CVC kit, sterile gloves + gown, NS flush ×3, chlorhexidine scrub ×3, sterile probe cover</li>
-        <li>Position: change bed angle so carotid isn't directly under the IJ; slight Trendelenburg; precedex/dexmedetomidine for anxiety; head of bed facing feet</li>
-        <li>Prime everything: uncap needle & pull back on plunger, run guidewire to confirm smooth, scalpel, dilator, catheter — caps/locks on <b>all ports except the middle</b>, flush all 3 lumens with NS. Line up in order of use: <b>finder needle → wire → dilator → scalpel → catheter</b></li>
+        <li><b>Materials:</b> CVC kit, sterile gloves + gown, NS flush ×3, chlorhexidine scrub ×3, sterile probe cover, Kelly clamp</li>
+        <li><b>Position:</b> slight reverse Trendelenburg. MRP at head of bed facing feet</li>
+        <li>Localize vein and understand anatomy with US prior to proceeding. Consider left IJ if more favourable</li>
+        <li>Don sterile gown and gloves</li>
+        <li>Drape in sterile fashion</li>
+        <li>Clean area with chlorhexidine</li>
+        <li>Prime everything: Loosen needle (uncap needle and pull back on plungers), run guidewire through aparatus to ensure smooth, ensure scalpel prepped, dilator within reach, and for the triple lumen catheter, flush all 3 lumens with NS, place blue locks on outside lumens and keep the middle lumen open. Line up the materials in order of use: lidocaine, finder needle, wire, scalpel, dilator, then triple lumen catheter.</li>
+        <li>If patient anxious, consider precedex/dexmedetomidine</li>
+        <li>Clean area with chlorhexidine</li>
       </ul>
       <h4>Ultrasound landmarking (IJ)</h4>
       <ul>
-        <li>Linear probe, vascular preset, <b>marker to patient's left</b></li>
-        <li>IJ = lateral to carotid, thin-walled, easily collapsible, respirophasic, non-pulsatile</li>
+        <li>Linear probe, vascular preset, <b>marker to patient's left</b> so that US movements make sense at the head of the bed</li>
+        <li>IJ = lateral to carotid, thin-walled, easily collapsible, respirophasic, non-pulsatile. Want to pick a spot where IJ is most distended</li>
         <li>Orient approach so vein is <b>beside</b> the carotid, not on top of it</li>
         <li>Mark skin-to-vein depth → expect flashback at that distance (past it = through the vein)</li>
       </ul>
       <h4>Technique</h4>
       <ul>
-        <li>Local → bleb → anesthetize down to & just above vein under US (probe & needle at ~90°)</li>
-        <li>"Creep" the needle with negative pressure until flashback → stabilize → pull back to confirm still in vein</li>
-        <li>Thread wire → <b>visualize wire in vein (short + long axis) BEFORE dilating</b></li>
-        <li>Skin nick at the angle of the wire, cutting <em>against</em> the wire; dilate gently (brute force kinks the wire) — only ⅓ (max ½) of dilator length; confirm wire still moves smoothly</li>
-        <li>Thread catheter over wire, pulling wire back until it exits the port → hub catheter → remove wire</li>
-        <li>Bleed-back each port (one at a time), aspirate to clear air, then flush; keep others clamped/locked</li>
+        <li>Local → bleb (1% lidocaine) → anesthetize down to & just above vein under US (Probe & needle should be ~90° to each other for best visualization)</li>
+        <li>"Creep" the needle with negative pressure until flashback → stabilize → pull back on plunger to confirm that you are still in the vein</li>
+        <li>With needle stabilized, remove syringe then thread wire</li>
+        <li><b>KEY STEP: visualize wire in vein (short + long axis) BEFORE dilating</b></li>
+        <li>Skin nick at the angle of the wire, cutting <em>against</em> the wire. Dilate gently (brute force kinks the wire) — only ⅓ (max ½) of dilator length. Most important is to dilate the skin and subcut tissue. Move wire in and out (small motions) to ensure no kinking.</li>
+        <li>KEY STEP: DO NOT take hands off wire. Thread catheter over wire. <b>PULL the WIRE</b> back until it exits the port → then you can advance and hub catheter. Then remove wire</li>
+        <li>Bleed-back each port (one at a time), aspirate to clear any air, then flush; keep others clamped/locked. Secure catheter with sutures.</li>
         <li>CXR for any line placed in the thorax</li>
       </ul>
       <h4>Confirming placement (IJ)</h4>
       <ul><li>Tip at cavo-atrial junction, at/just above the carina, above the pericardial reflection (lower = tamponade risk); ideally oriented vertically in SVC</li></ul>
       <details><summary>Complications</summary><div class="inner">
         <ul>
-          <li><b>Arterial puncture</b> — finder needle: pressure, sit up, reattempt. Wire: remove + pressure. <b>Dilator: heavy pressure + STAT vascular surgery. Catheter: leave it in, STAT vascular surgery.</b></li>
-          <li><b>Pneumothorax</b> — puncturing pleura; low with US; usually on post-procedure CXR. Small/apical: observe. Large/tension: chest tube/pigtail</li>
-          <li><b>Lost wire</b> — call vascular surgery/IR; clamp with Kelly near skin if still visible</li>
-          <li><b>Local hematoma</b> — stable: monitor. Expanding/mass effect: compression + vascular surgery</li>
+          <li><b>Arterial puncture:</b> If with the <b>finder needle</b>, then apply pressure, sit them up, and reattempt. If with <b>wire</b>, then remove wire and apply pressure. If with the <b>dilator</b> APPLY HEAVY PRESSURE + STAT vascular surgery. If with <b>catheter</b>, LEAVE IT IN AND STAT vascular surgery.</li>
+          <li><b>Pneumothorax</b> Low incidence with US. Will usually pick up on post-procedure CXR. If small/apical: observe. If large/tension: chest tube/pigtail</li>
+          <li><b>Lost wire:</b> Call vascular surgery/IR. Pro tip is to clamp wire with Kelly near skin to avoid this complication</li>
+          <li><b>Local hematoma:</b> IF stable: monitor. If expanding/mass effect: compression + vascular surgery</li>
         </ul>
       </div></details>
       <h4>Documentation</h4>
@@ -127,23 +135,31 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <h4>Indications / contraindications</h4>
       <ul>
         <li>Diagnostic and/or therapeutic (relieve WOB via lung recruitment)</li>
-        <li>CI: irreversible coagulopathy (wait to hold AC if possible), platelets &lt;20 (target &gt;50; newer evidence supports INR&gt;3 / plt&gt;25), overlying infection, unsafe anatomy. Mechanically ventilated = higher tension-PTX risk</li>
+        <li>Contraindications: irreversible coagulopathy (wait to hold AC if possible), platelets &lt;20 (target &gt;50; newer evidence supports INR&gt;3 / plt&gt;25), overlying infection, unsafe anatomy. Mechanically ventilated = higher tension-PTX risk</li>
         <li>Labs: total protein, LDH</li>
       </ul>
       <h4>Ultrasound & marking</h4>
       <ul>
-        <li>Curvilinear to find best rib space → linear array to refine & see vessels; ensure needle enters <b>inferior margin of the rib space</b> (neurovascular bundle sits below each rib)</li>
-        <li>Go <b>≥10 cm lateral of the posterior midline</b> (bundle more exposed medially); fluid pocket ≥1.5 cm deep, wider than 2 intercostal spaces, ≥1 rib space above diaphragm</li>
-        <li>Run power Doppler along the needle path; note probe angle = angle of approach</li>
+        <li>Curvilinear to find best rib space → linear array to refine & see vessels. Enter through the <b>inferior</b> margin of the rib space as the neurovascular bundle sits below each rib</li>
+        <li>Go <b>≥10 cm lateral of the posterior midline</b> (bundle more exposed medially). Fluid pocket should be ≥1.5 cm deep, wider than 2 intercostal spaces, and ≥1 rib space above diaphragm</li>
+        <li>Run power Doppler along the needle path. The probe angle = the angle of needle approach</li>
+      </ul>
+      <h4>Preparation</h4>
+      <ul>
+        <li><b>Materials:</b> Thoracentesis kit (Pleura seal), 1% lidocaine (2 vials 5cc each), 3x chlorhexidine lollipops, sterile gown/gloves, mask with eyewear, large syringe for collection, 3x yellow top urine collection containers, labels for samples (put name, sample type, patient sticker, date), dressing with petroleum jelly, and gauze</li>
+        <li>Ensure area of skin is marked where we will do procedure</li>
+        <li>Sterile donning</li>
+        <li>Prep area with chlorhexidine and drape patient in sterile fashion</li>
       </ul>
       <h4>Technique</h4>
       <ul>
-        <li>Freeze down to the rib & periosteum; <b>walk the needle over the superior surface of the rib</b>, freezing the track (bleb of lido in skin, advance/withdraw/inject to pleural space, then inject into pleural space)</li>
-        <li>Real needle: advance with <b>negative pressure</b> — anchor left hand (needle) to the patient, anchor right elbow to your body</li>
+        <li>Freeze skin, then freeze down to the rib & periosteum. When injecting needle, <b>walk the needle over the superior surface of the rib</b>. Inject remainder into pleural space</li>
+        <li>Real needle: Insert needle at the target site (superior margin of rib) advance with <b>negative pressure</b>. Anchor left hand (needle) to the patient, anchor right elbow to your body</li>
         <li>At pleural space: lock right arm, advance left-hand catheter into the space while withdrawing needle</li>
+        <li>Once needle removed, occlude catheter with finger. Connect the stopcock to the catheter</li>
         <li>Advance catheter 3–5 mm more; if it won't advance you're likely interstitial → restart</li>
         <li>Ask patient to <b>hum</b> on catheter removal (↑ intrathoracic pressure, ↓ PTX). Petroleum jelly + gauze, pull quickly</li>
-        <li>Chest tube = Seldinger technique</li>
+        <li>If performing a chest tube, use the Seldinger technique</li>
       </ul>
       <div class="flag"><b>Post-thora CXR</b> to check for: interval/residual effusion, tubing/catheter placement, pneumothorax.</div>
       <h4>Samples</h4>
@@ -275,19 +291,21 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <p class="lead">Minimum criteria = the minimum images needed to interrogate an organ (e.g. IVC needs long + short axis).</p>`},
 
     {t:"Lung ultrasound", body:`
-      <p class="lead">Curvilinear or phased array, abdominal preset, marker to head, perpendicular to pleura. Picks up ~20 cc effusion vs ~200 cc for CXR.</p>
+      <p class="lead">Curvilinear or phased array, <b>abdominal preset</b>, marker to head, perpendicular to pleura. Picks up minimum ~20 cc effusion vs ~200 cc for CXR.</p>
       <h4>Findings</h4>
       <ul>
-        <li><b>A-lines</b>: horizontal reverberation artifact; only 1 is the true pleural line. No alveolar/interstitial pathology; also seen in PTX, COPD/asthma. 93% Sp for PCWP &lt;18</li>
-        <li><b>B-lines</b>: vertical, from pleura, move down screen, obliterate A-lines → interstitial process (cardiogenic edema, early/atypical PNA, ILD, DAH)</li>
+        <li><b>A-lines</b>: horizontal reverberation artifact; only 1 is the true pleural line. Only need 1 A line for view. Not specific for normal lung. 93% Sp for PCWP &lt;18</li>
+        <li><b>B-lines</b>: vertical, from pleura, move down screen (must go through length of ultrasound screen otherwise artifact), obliterate A-lines → interstitial process (cardiogenic edema, early/atypical PNA, ILD, DAH)</li>
         <li><b>Consolidation/hepatization</b>: lung looks like liver → infection or atelectasis</li>
-        <li><b>Pleural effusion</b>: posterior costophrenic recess</li>
+        <li><b>Pleural effusion</b>: Look at most depend regions (posterior costophrenic recess)</li>
         <li><b>Spine sign</b>: seeing spine above the diaphragm suggests effusion (air-filled lung blocks the beam)</li>
+        <p class="lead">There must be >2 B lines in a single interspace to be pathologic. B lines should extend the length of the screen, and obliterate A lines.</p>
       </ul>
       <h4>Protocol</h4>
-      <ul><li>4–6 points per hemithorax incl. 2 posterior; Point 4 = PLAPS (posterolateral, mid-post axillary at costophrenic angle — find liver/spleen as landmark)</li></ul>`},
+      <ul><li>6 points per hemithorax on each sideincl. 2 posterior; Point 4 = PLAPS (posterolateral, mid-post axillary at costophrenic angle — find liver/spleen as landmark)</li></ul>
+      <div class="pill">Comment on lung sliding, A-lines, B-lines, pleural effusions, consolidation, lung points, and dynamic air bronchograms</div>`},
 
-    {t:"IVC & volume assessment", body:`
+    {t:"IVC", body:`
       <div class="pill">Normal end-expiratory IVC 1.5–2.5 cm; normal collapse &lt;50% with inspiration. Normal aorta ≤3 cm.</div>
       <h4>IVC</h4>
       <ul>
@@ -299,6 +317,29 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <h4>JVP by US</h4>
       <ul><li>Start transverse near clavicle (superior = flat/harder); find point where IJ tapers = JVP. Don't over-compress; image IJ at widest diameter; avoid heel-toe (false apex)</li></ul>`},
 
+    {t:"JVP", body:`
+      <h4>JVP</h4>
+      <ul>
+        <li>Use the vascular preset</li>
+        <li>When the vessel is distended (larger than carotid), circular, it is a vessel <b>under pressure</b>
+        <li>Note than you need to start 1-2cm above the clavicle, otherwise findings can be obscured.
+        <li>Find the 'taper zone'. There is not 'taper point'. By the time you reach the point of maximum tenting, you are above the JVP</li>
+        <li>Fresh clot can be anechoic -> make sure to compress the vessel</li>
+        <b>Always assess in 2 planes. Look for crisp outlines of vessel walls for sagittal view</li>
+      </ul>
+      </ul>`},
+
+         {t:"Abdominal US", body:`
+      <h4>Abdominal US</h4>
+      <ul>
+        <li>Use the abdominal preset (great for looking at free fluid). Lay patient supine, slightly elevated HOB.</li>
+        <li>Process: RUQ (caudal tip of liver, Morrison's pouch, and paracolic gutter), LUQ (sub-diaphragmatic, spleno-renal pouch, and paracolic gutter), suprapubic (rectovesicular pouch, and pouch of douglas)</li>
+        <li>Identify if it is <b>free fluid</b>. Free fluid settles to dependent regions and has angulated borders (does not form geometric shapes)</li>
+        <li>Minimum criteria to r/o ascites: RUQ, LUQ and suprapubic views</li>
+      </ul>
+      </ul>`},
+  
+     
     {t:"Fluid responsiveness", body:`
       <p class="lead">You cannot look at the IVC alone — CVP is a static marker blind to the Frank-Starling slope.</p>
       <h4>Concept</h4>
@@ -317,32 +358,66 @@ The patient tolerated the procedure well and there were no complications.</pre>`
 
 /* ========================= CROSS-COVER / ACUTE ========================= */
 {
-  id:"crosscover", ico:"🌙", name:"Cross-Cover & Acute Calls",
+  id:"crosscover", ico:"🌙", name:"Undifferentiated Patient",
   desc:"The pages you get overnight — a fast, structured first move.",
   topics:[
     {t:"Acute dyspnea", body:`
+      <h4>Stabilize</h4>
+      <ul>
+         <li>ABC MOVIE: ensure protecting airway, breathing, and pulses. Do they need IV access or monitors?</li>
+      </ul>
       <h4>Differential</h4>
       <ul>
         <li>Pulmonary: PNA, aspiration, atelectasis, malignancy, anaphylaxis, angioedema, PTX, COPD/asthma, PE</li>
         <li>Cardiac: CHF, arrhythmia, pericarditis/tamponade, ACS</li>
         <li>Metabolic: anemia, acidosis, toxins</li>
       </ul>
-      <h4>First move</h4>
-      <ul><li>Baseline labs: VBG, ECG, BNP, trop, CXR → then bedside PoCUS. Does the CXR match the O₂ need? Trending 1–3 L vs sudden change sets urgency</li></ul>
+      <h4>Focused Assessment</h4>
+      <ul>
+         <li>History: What was the onset, risk factors for PE, orthopnea/PND, chest pain, cough/fever/sputum, toxin/drug exposure, aspiration/LOC, palpitations, are their O2 requirements consistent vs sudden change sets urgency</li>
+         <li>Physical Exam: JVP, peripheral edema, wheeze, breath sounds, tracheal deviation, crackles, fever, signs of DVT</li>
+         <li>PoCUS: Lung US, JVP, IVC</li>
+      <h4>Investigations</h4>
+      <ul><li>Baseline labs: VBG, ECG, BNP, trop, CXR → then bedside PoCUS. Does the CXR match the O₂ need?</li></ul>
       <div class="flag">COPD exacerbation: if acidotic → BiPAP; high pCO₂ → tell senior. <b>~25% of COPDe have a concurrent PE.</b></div>
-      <h4>PE</h4>
-      <ul><li>Thrombolysis if: hypotension/shock, worsening RV dysfunction, extensive clot, free-floating RH thrombus, arrest</li></ul>
+      <h4>Suspected PE</h4>
+      <ul>
+         <li>Risk stratify (Wells) and CTPA. Therapeutic anticoagulation if no major bleed risk</li>
+         <li>Thrombolysis if: hypotension/shock, worsening RV dysfunction, extensive clot, free-floating RH thrombus, arrest</li>
+      </ul>
+      <h4>Suspected ADHF</h4>
+      <ul>
+         <li>Sit upright, high flow O2 or NIPPV if in distress</li>
+         <li>IV loop diuretic</li>
+         <li>If hypertensive + pulmonary edema: IV nitroglycerin + NIPPV</li>
+     </ul>
+      <h4>Suspected Aspiration</h4>
+      <ul>
+         <li>Sit upright, suction and protect airway, O2 as needed. Avoid NIPPV in aspiration.</li>
+         <li>CXR if septic or possible PNA</li>
+      </ul>
+      <h4>Suspected Asthma/COPD exacerbation</h4>
+      <ul>
+         <li>Nebulized SABA (albuterol) +/- ipratropium</li>
+         <li>Systemic glucocorticoids early (oral pred or IV methylpred)</li>
+         <li>NIPPV for COPD with hypercapnia</li>
+      </ul>
+      <h4>Suspected ACS</h4>
+      <ul>
+         <li>O2 if hypoxic, aspirin load, nitrates for pain/BP, heparin per protocol</li>
+         <li>Serial trop, ECG</li>
+         <li>Activate cath lab for STEMI or high-risk NSTEMI</li>
+      </ul>
+      <h4>Acidosis</h4>
+      <ul>
+         <li>O2, monitors, VBG</li>
+         <li>Treat underlying cause (MUDPILES), GI bicarb loss (eg. diarrhea), Renal bicarb loss, Reduced renal acid excretion</li>
+      </ul>
       <h4>Anaphylaxis — "HIVES"</h4>
       <ul>
         <li>Antihistamine (e.g. ranitidine 50 mg IV q8h ×3), IV fluids, Ventolin (1–2 puffs q15min PRN)</li>
-        <li><b>Epinephrine 0.5 mg IM</b>, steroids (methylprednisolone 125 mg IV ×1)</li>
-      </ul>
-      <h4>Overnight hypoxemia call</h4>
-      <ul>
-        <li>Baseline O₂? Time course — sudden vs gradual, and how much worse? This shapes the differential</li>
-        <li>On the phone: vitals, CXR. At bedside: examine; add VBG and PoCUS</li>
-        <li>Rapid change → think aspiration and flash pulmonary edema</li>
-        <li>Plan: supportive therapy, treat the underlying cause (± abx, diurese, RT/CCOT, ± BiPAP)</li>
+        <li><b>Epinephrine 0.5 mg IM (1:1000) repeat q5-15min PRN</b></li>
+        <li>Adjuncts: IV crystalloids, H1/H2 blockers, and IV steroids (methylprednisolone 125 mg IV ×1)</li>
       </ul>`},
 
     {t:"Acute meningitis", body:`
