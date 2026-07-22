@@ -357,25 +357,66 @@ The patient tolerated the procedure well and there were no complications.</pre>`
 
 /* ========================= CROSS-COVER / ACUTE ========================= */
 {
-  id:"crosscover", ico:"🌙", name:"Cross-Cover & Acute Calls",
+  id:"crosscover", ico:"🌙", name:"Undifferentiated Patient",
   desc:"The pages you get overnight — a fast, structured first move.",
   topics:[
     {t:"Acute dyspnea", body:`
+      <h4>Stabilize</h4>
+      <ul>
+         <li>ABC MOVIE: ensure protecting airway, breathing, and pulses. Do they need IV access or monitors?</li>
+      </ul>
       <h4>Differential</h4>
       <ul>
         <li>Pulmonary: PNA, aspiration, atelectasis, malignancy, anaphylaxis, angioedema, PTX, COPD/asthma, PE</li>
         <li>Cardiac: CHF, arrhythmia, pericarditis/tamponade, ACS</li>
         <li>Metabolic: anemia, acidosis, toxins</li>
       </ul>
-      <h4>First move</h4>
-      <ul><li>Baseline labs: VBG, ECG, BNP, trop, CXR → then bedside PoCUS. Does the CXR match the O₂ need? Trending 1–3 L vs sudden change sets urgency</li></ul>
+      <h4>Focused Assessment</h4>
+      <ul>
+         <li>History: What was the onset, risk factors for PE, orthopnea/PND, chest pain, cough/fever/sputum, toxin/drug exposure, aspiration/LOC, palpitations, are their O2 requirements consistent vs sudden change sets urgency</li>
+         <li>Physical Exam: JVP, peripheral edema, wheeze, breath sounds, tracheal deviation, crackles, fever, signs of DVT</li>
+         <li>PoCUS: Lung US, JVP, IVC</li>
+      <h4>Investigations</h4>
+      <ul><li>Baseline labs: VBG, ECG, BNP, trop, CXR → then bedside PoCUS. Does the CXR match the O₂ need?</li></ul>
       <div class="flag">COPD exacerbation: if acidotic → BiPAP; high pCO₂ → tell senior. <b>~25% of COPDe have a concurrent PE.</b></div>
-      <h4>PE</h4>
-      <ul><li>Thrombolysis if: hypotension/shock, worsening RV dysfunction, extensive clot, free-floating RH thrombus, arrest</li></ul>
+      <h4>Suspected PE</h4>
+      <ul>
+         <li>Risk stratify (Wells) and CTPA. Therapeutic anticoagulation if no major bleed risk</li>
+         <li>Thrombolysis if: hypotension/shock, worsening RV dysfunction, extensive clot, free-floating RH thrombus, arrest</li>
+      </ul>
+      <h4>Suspected ADHF</h4>
+      <ul>
+         <li>Sit upright, high flow O2 or NIPPV if in distress</li>
+         <li>IV loop diuretic</li>
+         <li>If hypertensive + pulmonary edema: IV nitroglycerin + NIPPV</li>
+     </ul>
+      <h4>Suspected Aspiration</h4>
+      <ul>
+         <li>Sit upright, suction and protect airway, O2 as needed. Avoid NIPPV in aspiration.</li>
+         <li>CXR if septic or possible PNA</li>
+      </ul>
+      <h4>Suspected Asthma/COPD exacerbation</h4>
+      <ul>
+         <li>Nebulized SABA (albuterol) +/- ipratropium</li>
+         <li>Systemic glucocorticoids early (oral pred or IV methylpred)</li>
+         <li>NIPPV for COPD with hypercapnia</li>
+      </ul>
+      <h4>Suspected ACS</h4>
+      <ul>
+         <li>O2 if hypoxic, aspirin load, nitrates for pain/BP, heparin per protocol</li>
+         <li>Serial trop, ECG</li>
+         <li>Activate cath lab for STEMI or high-risk NSTEMI</li>
+      </ul>
+      <h4>Acidosis</h4>
+      <ul>
+         <li>O2, monitors, VBG</li>
+         <li>Treat underlying cause (MUDPILES), GI bicarb loss (eg. diarrhea), Renal bicarb loss, Reduced renal acid excretion</li>
+      </ul>
       <h4>Anaphylaxis — "HIVES"</h4>
       <ul>
         <li>Antihistamine (e.g. ranitidine 50 mg IV q8h ×3), IV fluids, Ventolin (1–2 puffs q15min PRN)</li>
-        <li><b>Epinephrine 0.5 mg IM</b>, steroids (methylprednisolone 125 mg IV ×1)</li>
+        <li><b>Epinephrine 0.5 mg IM (1:1000) repeat q5-15min PRN</b></li>
+        <li>Adjuncts: IV crystalloids, H1/H2 blockers, and IV steroids (methylprednisolone 125 mg IV ×1)</li>
       </ul>`},
 
     {t:"Acute meningitis", body:`
