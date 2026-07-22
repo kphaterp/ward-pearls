@@ -290,19 +290,21 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <p class="lead">Minimum criteria = the minimum images needed to interrogate an organ (e.g. IVC needs long + short axis).</p>`},
 
     {t:"Lung ultrasound", body:`
-      <p class="lead">Curvilinear or phased array, abdominal preset, marker to head, perpendicular to pleura. Picks up ~20 cc effusion vs ~200 cc for CXR.</p>
+      <p class="lead">Curvilinear or phased array, <b>abdominal preset</b>, marker to head, perpendicular to pleura. Picks up minimum ~20 cc effusion vs ~200 cc for CXR.</p>
       <h4>Findings</h4>
       <ul>
-        <li><b>A-lines</b>: horizontal reverberation artifact; only 1 is the true pleural line. No alveolar/interstitial pathology; also seen in PTX, COPD/asthma. 93% Sp for PCWP &lt;18</li>
-        <li><b>B-lines</b>: vertical, from pleura, move down screen, obliterate A-lines → interstitial process (cardiogenic edema, early/atypical PNA, ILD, DAH)</li>
+        <li><b>A-lines</b>: horizontal reverberation artifact; only 1 is the true pleural line. Only need 1 A line for view. Not specific for normal lung. 93% Sp for PCWP &lt;18</li>
+        <li><b>B-lines</b>: vertical, from pleura, move down screen (must go through length of ultrasound screen otherwise artifact), obliterate A-lines → interstitial process (cardiogenic edema, early/atypical PNA, ILD, DAH)</li>
         <li><b>Consolidation/hepatization</b>: lung looks like liver → infection or atelectasis</li>
-        <li><b>Pleural effusion</b>: posterior costophrenic recess</li>
+        <li><b>Pleural effusion</b>: Look at most depend regions (posterior costophrenic recess)</li>
         <li><b>Spine sign</b>: seeing spine above the diaphragm suggests effusion (air-filled lung blocks the beam)</li>
+        <p class="lead">There must be >2 B lines in a single interspace to be pathologic. B lines should extend the length of the screen, and obliterate A lines.</p>
       </ul>
       <h4>Protocol</h4>
-      <ul><li>4–6 points per hemithorax incl. 2 posterior; Point 4 = PLAPS (posterolateral, mid-post axillary at costophrenic angle — find liver/spleen as landmark)</li></ul>`},
+      <ul><li>6 points per hemithorax on each sideincl. 2 posterior; Point 4 = PLAPS (posterolateral, mid-post axillary at costophrenic angle — find liver/spleen as landmark)</li></ul>
+      <div class="pill">Comment on lung sliding, A-lines, B-lines, pleural effusions, consolidation, lung points, and dynamic air bronchograms</div>`},
 
-    {t:"IVC & volume assessment", body:`
+    {t:"IVC", body:`
       <div class="pill">Normal end-expiratory IVC 1.5–2.5 cm; normal collapse &lt;50% with inspiration. Normal aorta ≤3 cm.</div>
       <h4>IVC</h4>
       <ul>
@@ -314,6 +316,29 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <h4>JVP by US</h4>
       <ul><li>Start transverse near clavicle (superior = flat/harder); find point where IJ tapers = JVP. Don't over-compress; image IJ at widest diameter; avoid heel-toe (false apex)</li></ul>`},
 
+    {t:"JVP", body:`
+      <h4>JVP</h4>
+      <ul>
+        <li>Use the vascular preset</li>
+        <li>When the vessel is distended (larger than carotid), circular, it is a vessel <b>under pressure</b>
+        <li>Note than you need to start 1-2cm above the clavicle, otherwise findings can be obscured.
+        <li>Find the 'taper zone'. There is not 'taper point'. By the time you reach the point of maximum tenting, you are above the JVP</li>
+        <li>Fresh clot can be anechoic -> make sure to compress the vessel</li>
+        <b>Always assess in 2 planes. Look for crisp outlines of vessel walls for sagittal view</li>
+      </ul>
+      </ul>`},
+
+         {t:"Abdominal US", body:`
+      <h4>Abdominal US</h4>
+      <ul>
+        <li>Use the abdominal preset (great for looking at free fluid). Lay patient supine, slightly elevated HOB.</li>
+        <li>Process: RUQ (caudal tip of liver, Morrison's pouch, and paracolic gutter), LUQ (sub-diaphragmatic, spleno-renal pouch, and paracolic gutter), suprapubic (rectovesicular pouch, and pouch of douglas)</li>
+        <li>Identify if it is <b>free fluid</b>. Free fluid settles to dependent regions and has angulated borders (does not form geometric shapes)</li>
+        <li>Minimum criteria to r/o ascites: RUQ, LUQ and suprapubic views</li>
+      </ul>
+      </ul>`},
+  
+     
     {t:"Fluid responsiveness", body:`
       <p class="lead">You cannot look at the IVC alone — CVP is a static marker blind to the Frank-Starling slope.</p>
       <h4>Concept</h4>
