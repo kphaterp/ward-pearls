@@ -1,4 +1,3 @@
-
 /* ============================================================
    KIRAN P, MD — WARD REFERENCE — CONTENT
    ------------------------------------------------------------
@@ -20,8 +19,8 @@ const PAGES = [
   { id:"approaches", ico:"🧭", title:"Approaches", short:"Approaches",
     desc:"The undifferentiated patient, electrolytes & acid-base, neurology, common diagnoses, and goals of care.",
     cats:["crosscover","lytes","neuro","diagnoses","goc"] },
-  { id:"meds", ico:"💊", title:"Medications & Ward Calls", short:"Meds & Calls",
-    desc:"Medication cheat sheet, common symptoms & management, and abbreviations.",
+  { id:"meds", ico:"💊", title:"Common Meds and Doses", short:"Meds & Doses",
+    desc:"Medication cheat sheet and abbreviations.",
     cats:["wardmeds","reference"] },
   { id:"trials", ico:"📊", title:"Landmark Trials", short:"Trials",
     desc:"Practice-changing studies by system — the bottom line and a link to each.",
@@ -638,6 +637,23 @@ The patient tolerated the procedure well and there were no complications.</pre>`
         <li><b>Pre-procedure:</b> NPO at midnight. If asked for maintenance fluids, make sure an end time is ordered and check for no HF/risk of overload</li>
         <li><b>Documentation:</b> get the name and service/team of every patient. For anyone you assessed in person, recommend leaving a note</li>
       </ul>`},
+
+    {t:"Common symptoms and management", body:`
+      <h4>Pain ladder</h4>
+      <ul>
+        <li>Non-opioid: round-the-clock acetaminophen; magnesium (migraine/neuropathic); gabapentin; steroids (pain/nausea/edema)</li>
+        <li><b>Avoid tramadol</b> (serotonin syndrome, hypoglycemia, ↓seizure threshold) and <b>T3/codeine</b> (variable metabolism) — just use morphine. <b>Hydromorphone ≈ 5× morphine.</b></li>
+        <li>Advanced: dexmedetomidine, lidocaine, ketamine, propofol, intrathecal pumps. Naloxone microdose 0.01–0.04</li>
+      </ul>
+      <h4>Nausea</h4>
+      <ul>
+        <li>Haloperidol 0.5–1 mg (very effective); olanzapine 2.5 mg qHS; metoclopramide (prokinetic — avoid in obstruction, don't combine with diphenhydramine); dexamethasone (esp. headache); Gravol (vertigo, sedating); ondansetron (constipation, ↑QTc); isopropyl-alcohol wipes (evidence-based)</li>
+        <li><b>Before treating:</b> is it new or old? Check an ECG/QTc — if borderline (~510) use smaller doses and repeat the ECG. Gravol is very deliriogenic (more sedative than antiemetic) — avoid in older adults</li>
+      </ul>
+      <h4>Dyspnea & secretions</h4>
+      <ul><li>Opioids + bedside fan (trigeminal). Type 1 (hypopharyngeal) secretions → glycopyrrolate (suctioning ineffective)</li></ul>
+      <h4>End-of-life signs</h4>
+      <ul><li>Cyanosis (look around the knees), rhythmic mandibular breathing, loss of radial pulses (very sensitive), secretions. Use EOL order sets; pre-communicate double effect</li></ul>`},
   ]
 },
 
@@ -990,7 +1006,7 @@ The patient tolerated the procedure well and there were no complications.</pre>`
 
 /* ========================= MEDICATIONS & SYMPTOM MGMT ========================= */
 {
-  id:"wardmeds", ico:"💊", name:"Medications & Symptom Management",
+  id:"wardmeds", ico:"💊", name:"Medications",
   desc:"Quick-grab regimens. Always confirm against local protocol / pharmacy.",
   topics:[
     {t:"Medication cheat sheet (by indication)", body:`
@@ -1028,24 +1044,35 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <details><summary>Delirium / palliative</summary><div class="inner"><ul>
         <li>Quetiapine 6.25 dinner / 12.5 qHS; loxapine 2.5 mg SQ/IM q1h; trazodone 12.5–25 mg</li>
         <li>Pain: acetaminophen RTC, morphine, hydromorphone (5× morphine); nausea: haloperidol 0.5–1 mg, olanzapine 2.5 qHS</li>
+      </ul></div></details>
+      <details><summary>Hypoglycemia</summary><div class="inner"><ul>
+        <li>Able to eat → PO juice/snack. NPO/unable → <b>IV 1 amp D50</b>, recheck</li>
+        <li>Persistent → <b>D5 or D10 infusion</b>; hold antihyperglycemics and find the cause</li>
+      </ul></div></details>
+      <details><summary>Inpatient hyperglycemia</summary><div class="inner"><ul>
+        <li>Called for CBG &gt;18: 18–20 → give the highest sliding-scale level; &gt;20 → review total daily insulin (reasonable to add 2–3 units)</li>
+        <li>Recheck CBG at 0300 if unsure; check DKA / NPO status / IV fluids first</li>
+      </ul></div></details>
+      <details><summary>Insomnia</summary><div class="inner"><ul>
+        <li>Sleep hygiene + melatonin 3–6 mg (± top-up)</li>
+        <li>Younger: zopiclone 3.75 mg PO. Older (avoid sedatives): quetiapine 6.25 mg or trazodone 12.5 mg PO</li>
+      </ul></div></details>
+      <details><summary>Pain (ward call)</summary><div class="inner"><ul>
+        <li>Acetaminophen first; topical diclofenac 2.32% gel (Voltaren; up to 10%)</li>
+        <li>Opioid-naive → start low/slow: e.g. hydromorphone 0.25 mg PO in frail/older; SC ≈ ½ the PO dose</li>
+      </ul></div></details>
+      <details><summary>Nausea / antiemetics</summary><div class="inner"><ul>
+        <li>Check the QTc first. Ondansetron 4–8 mg q8h; metoclopramide 5–10 mg q6h (avoid in obstruction); haloperidol 0.5–1 mg; olanzapine 2.5 mg qHS</li>
+        <li>Avoid Gravol in the elderly (deliriogenic)</li>
+      </ul></div></details>
+      <details><summary>Anaphylaxis</summary><div class="inner"><ul>
+        <li><b>Epinephrine 0.5 mg IM (1:1000)</b> q5–15 min PRN; IV crystalloids</li>
+        <li>Adjuncts: H1/H2 antihistamines, methylprednisolone 125 mg IV, salbutamol for bronchospasm</li>
+      </ul></div></details>
+      <details><summary>Peri-arrest rhythms</summary><div class="inner"><ul>
+        <li>Symptomatic bradycardia: atropine 0.5 mg IV q3–5 min (max 3 mg) → transcutaneous pacing / chronotrope infusion</li>
+        <li>Stable SVT: vagal → adenosine 6 mg then 12 mg IV. AF rate control: metoprolol or diltiazem</li>
       </ul></div></details>`},
-
-    {t:"Common symptoms and management", body:`
-      <h4>Pain ladder</h4>
-      <ul>
-        <li>Non-opioid: round-the-clock acetaminophen; magnesium (migraine/neuropathic); gabapentin; steroids (pain/nausea/edema)</li>
-        <li><b>Avoid tramadol</b> (serotonin syndrome, hypoglycemia, ↓seizure threshold) and <b>T3/codeine</b> (variable metabolism) — just use morphine. <b>Hydromorphone ≈ 5× morphine.</b></li>
-        <li>Advanced: dexmedetomidine, lidocaine, ketamine, propofol, intrathecal pumps. Naloxone microdose 0.01–0.04</li>
-      </ul>
-      <h4>Nausea</h4>
-      <ul>
-        <li>Haloperidol 0.5–1 mg (very effective); olanzapine 2.5 mg qHS; metoclopramide (prokinetic — avoid in obstruction, don't combine with diphenhydramine); dexamethasone (esp. headache); Gravol (vertigo, sedating); ondansetron (constipation, ↑QTc); isopropyl-alcohol wipes (evidence-based)</li>
-        <li><b>Before treating:</b> is it new or old? Check an ECG/QTc — if borderline (~510) use smaller doses and repeat the ECG. Gravol is very deliriogenic (more sedative than antiemetic) — avoid in older adults</li>
-      </ul>
-      <h4>Dyspnea & secretions</h4>
-      <ul><li>Opioids + bedside fan (trigeminal). Type 1 (hypopharyngeal) secretions → glycopyrrolate (suctioning ineffective)</li></ul>
-      <h4>End-of-life signs</h4>
-      <ul><li>Cyanosis (look around the knees), rhythmic mandibular breathing, loss of radial pulses (very sensitive), secretions. Use EOL order sets; pre-communicate double effect</li></ul>`},
   ]
 },
 
