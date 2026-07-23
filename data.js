@@ -872,6 +872,96 @@ The patient tolerated the procedure well and there were no complications.</pre>`
         <li>Scope yields: GERD/esophagitis (17–30%), stricture (2–40%), normal (24–30%), cancer (3–8%)</li>
         <li>Rx: empiric PPI + strong consideration for EGD; if symptoms resolve on PPI, reassess need for EGD; manometry if persistent with normal EGD</li>
       </ul>`},
+
+    {t:"Hypertensive urgency & emergency", body:`
+      <p class="lead"><b>Emergency</b> = acute end-organ damage from severe HTN → benefits from immediately lowering BP. <b>Urgency</b> = severe HTN without acute end-organ damage. Not all symptoms warrant "emergency."</p>
+      <h4>End-organ damage — "BARKH"</h4>
+      <ul>
+        <li><b>B</b>rain (stroke, HTN encephalopathy) · <b>A</b>rteries (acute aortic syndromes, preeclampsia) · <b>R</b>etina (retinopathy) · <b>K</b>idney (acute renal insufficiency, thrombotic microangiopathy) · <b>H</b>eart (acute heart failure, pulmonary edema)</li>
+      </ul>
+      <h4>Etiology</h4>
+      <ul>
+        <li>Uncontrolled chronic HTN; non-adherence; β-blocker/clonidine withdrawal</li>
+        <li>Biological (↑ cortisol/catecholamines), clinical (volume overload, thyroid storm), acute distress (pain, anxiety, stress)</li>
+        <li>BP-raising meds: NSAIDs, stimulants, prednisone, EPO, bupropion, antidepressants, OCP</li>
+        <li>Secondary HTN: OSA, renal parenchymal disease, endocrine, eclampsia, renal artery stenosis</li>
+      </ul>
+      <h4>Rule out emergency (by system)</h4>
+      <ul>
+        <li>Encephalopathy: insidious, non-localizing signs, ↓LOC, seizures (consider PRES)</li>
+        <li>Ischemic/hemorrhagic stroke: focal neuro signs · Aortic dissection: chest/back pain, asymmetric pulses/BP</li>
+        <li>Preeclampsia/eclampsia: headache, blurry vision, RUQ pain, edema, seizures</li>
+        <li>Severe retinopathy: papilledema, exudates, hemorrhage · Nephrosclerosis: AKI + proteinuria/hematuria</li>
+        <li>CHF: SOB, pulmonary edema · MI: chest pain, ECG changes, troponin rise</li>
+      </ul>
+      <h4>Evaluation</h4>
+      <ul>
+        <li>Hx: onset, duration, baseline BP, known end-organ damage, recent drug/EtOH use, meds & adherence, timing/dose of last dose; headache, visual/neuro change, chest/back pain, SOB</li>
+        <li>Exam: mental status, BP both arms, fundoscopy, carotid/abdominal bruits, volume, CVS/resp/abdo</li>
+        <li>Ix: CBC, lytes, Cr, blood smear, INR, LDH, bili, troponin, BNP, urinalysis, preg test, TSH, calcium, ECG, CXR; CT head if altered mental status or abnormal neuro exam</li>
+      </ul>
+      <h4>Treatment — urgency (no acute end-organ damage)</h4>
+      <ul>
+        <li><b>Oral</b> meds; hydralazine is not first-line. Previously treated → increase dose or add an agent; untreated → start low, go slow</li>
+        <li>Avoid IV antihypertensives and high oral loading doses. Even with very high BP, without accelerating end-organ damage there is no evidence IV beats oral (may worsen outcomes / cause overcorrection)</li>
+        <li><b>Avoid PRN antihypertensives</b> — set a high parameter instead. Monitor BP over several hours; outpatient f/u in 2–7 days</li>
+        <li>Consider inpatient observation if high-risk: DM, prior stroke, CAD, social situation</li>
+      </ul>
+      <div class="flag">Emergency: dissection → SBP &lt;120 with a β-blocker. Ischemic stroke → can let BP ride up to 220/120 unless thrombolytics given (then &lt;185/110); otherwise reduce ~25% in the first hour, then to 160/100–110 over the next 6 h — gradual, to preserve autoregulation.</div>
+      <ul>
+        <li>Generally ICU/CCU, or at least a closely monitored bed: art line, urine output, neuro vitals, IV antihypertensives</li>
+        <li>Agents need rapid onset, predictability, and limited duration for titratability: labetalol, nitroglycerin, nitroprusside, hydralazine</li>
+        <li>Volume depletion from pressure natriuresis/diuresis → cautious IV NS</li>
+      </ul>
+      <h4>Inpatient HTN</h4>
+      <ul>
+        <li>Treat if symptomatic or evidence of end-organ damage; if asymptomatic, consider treating when BP &gt;180–200</li>
+        <li>Home BP vs BP once meds restarted; precipitating meds on board? Contextualize — will tighter control help long-term?</li>
+        <li>Work up secondary causes (pheo, Cushing's, primary aldosteronism, OSA) as an <b>outpatient</b> — inpatient aldosterone/renin and metanephrines are not useful; CT abdo if you must do something inpatient</li>
+        <li>Ramipril should be BID. Resistant HTN → refer to a resistant-HTN clinic</li>
+      </ul>`},
+
+    {t:"Approach to shock", body:`
+      <p class="lead">Shock = failure of oxygen delivery and/or utilization — <b>not</b> synonymous with hypotension. DO₂ = CO × CaO₂.</p>
+      <h4>Stages</h4>
+      <ul>
+        <li><b>Compensated:</b> tachycardic but maintaining BP/perfusion; subtle exam findings; high sympathetic drive</li>
+        <li><b>Decompensated:</b> compensatory mechanisms fail → hypotension, AMS, oliguria, rising lactate</li>
+        <li><b>Irreversible</b></li>
+      </ul>
+      <h4>Recognize it on exam</h4>
+      <ul>
+        <li>Circulatory: tachycardia, narrow pulse pressure (SBP − DBP), delayed capillary refill, cool/mottled skin, weak peripheral pulses</li>
+        <li>Respiratory: tachypnea (compensating for acidosis), hypoxia (cardiogenic/obstructive)</li>
+        <li>End-organ: AMS, lactate, oliguria (&lt;0.5 mL/kg/h)</li>
+      </ul>
+      <div class="pill">Mixed venous gas (off PA, or pseudo-mixed off a central line) reflects returning venous blood — if oxygen utilization fails at the mitochondria, it can be falsely normal/high.</div>
+      <h4>Etiologies — "CHOD"</h4>
+      <ul><li><b>C</b>ardiogenic · <b>H</b>ypovolemic · <b>O</b>bstructive · <b>D</b>istributive</li></ul>
+      <h4>Septic shock</h4>
+      <ul>
+        <li>Organ dysfunction from a dysregulated host response to infection (acute rise in SOFA ≥2)</li>
+        <li><b>Septic shock:</b> vasopressors needed to keep MAP &gt;65 <b>and</b> lactate &gt;2 refractory to fluids</li>
+        <li>Pathophysiology: infection → cytokine storm → vasodilation & leak → microvascular injury → organ dysfunction</li>
+        <li>Warm shock: fever/hypothermia, rigors, tachycardia, tachypnea, warm/flushed/well-perfused, wide pulse pressure, confused. Later → cold shock</li>
+      </ul>
+      <h4>Elevated lactate</h4>
+      <ul>
+        <li><b>Type A</b> (tissue hypoxia): shock, severe HF, hypoxemia, anemia, CO poisoning, regional ischemia, cardiac arrest, cyanide</li>
+        <li><b>Type B</b> (non-hypoxic): B1 — liver failure, malignancy, thiamine deficiency, AKI, DKA; B2 — metformin, β-agonist, linezolid, propofol; B3 — inborn errors of metabolism</li>
+        <li>Sepsis (mixed): tissue hypoxia + catecholamine-driven anaerobic glycolysis — trend the lactate</li>
+      </ul>
+      <h4>Septic workup & resuscitation</h4>
+      <ul>
+        <li>Bloodwork: CBC + differential, coags, lytes/renal/liver, serum lactate, VBG</li>
+        <li>Cultures: blood ×2 before abx, culture any central line/indwelling device, urinalysis + urine culture, sputum culture/viral NAT</li>
+        <li>Imaging: CXR, PoCUS (cardiac, lung, IVC, JVP), ± CT if a deep/occult source is suspected</li>
+        <li>Fluids: 2–3 L (30 mL/kg crystalloid). Norepinephrine → target MAP &gt;65; add vasopressin if not improving; consider stress-dose hydrocortisone (50 mg q6h) if refractory to fluids/vasopressors</li>
+        <li>Trend lactate, urine output, exam, and hemodynamics q3h. Landmark steroid trials: APROCCHSS, ADRENAL, CORTICUS</li>
+      </ul>
+      <div class="flag">Refractory shock: confirm adequate source control, stress-dose steroids if not already, and consider occult bleed, adrenal insufficiency, or untreated arrhythmia. Avoid anchoring.</div>
+      <p>Abx guidance: <a href="https://aspires.vch.ca/" target="_blank" rel="noopener">ASPIRES →</a></p>`},
+
   ]
 },
 
