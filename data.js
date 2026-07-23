@@ -18,8 +18,8 @@ const PAGES = [
   { id:"pocus", ico:"📟", title:"Bedside Ultrasound", short:"PoCUS",
     desc:"PoCUS foundations, lung, IVC/volume, fluid responsiveness.", cats:["pocus"] },
   { id:"approaches", ico:"🧭", title:"Approaches", short:"Approaches",
-    desc:"Cross-cover calls, the undifferentiated patient, electrolytes & acid-base, neurology, common diagnoses, and goals of care.",
-    cats:["crosscover","undiff","lytes","neuro","diagnoses","goc"] },
+    desc:"The undifferentiated patient, electrolytes & acid-base, neurology, common diagnoses, and goals of care.",
+    cats:["crosscover","lytes","neuro","diagnoses","goc"] },
   { id:"meds", ico:"💊", title:"Medications & Ward Calls", short:"Meds & Calls",
     desc:"Medication cheat sheet, common symptoms & management, and abbreviations.",
     cats:["wardmeds","reference"] },
@@ -542,6 +542,47 @@ The patient tolerated the procedure well and there were no complications.</pre>`
         <li>Reverse-Trendelenburg (or passive leg raise) → if BP improves within ~10 min, suggests fluid responsiveness</li>
       </ul>`},
 
+    {t:"Approach to shock", body:`
+      <p class="lead">Shock = failure of oxygen delivery and/or utilization — <b>not</b> synonymous with hypotension. DO₂ = CO × CaO₂.</p>
+      <h4>Stages</h4>
+      <ul>
+        <li><b>Compensated:</b> tachycardic but maintaining BP/perfusion; subtle exam findings; high sympathetic drive</li>
+        <li><b>Decompensated:</b> compensatory mechanisms fail → hypotension, AMS, oliguria, rising lactate</li>
+        <li><b>Irreversible</b></li>
+      </ul>
+      <h4>Recognize it on exam</h4>
+      <ul>
+        <li>Circulatory: tachycardia, narrow pulse pressure (SBP − DBP), delayed capillary refill, cool/mottled skin, weak peripheral pulses</li>
+        <li>Respiratory: tachypnea (compensating for acidosis), hypoxia (cardiogenic/obstructive)</li>
+        <li>End-organ: AMS, lactate, oliguria (&lt;0.5 mL/kg/h)</li>
+      </ul>
+      <div class="pill">Mixed venous gas (off PA, or pseudo-mixed off a central line) reflects returning venous blood — if oxygen utilization fails at the mitochondria, it can be falsely normal/high.</div>
+      <h4>Etiologies — "CHOD"</h4>
+      <ul><li><b>C</b>ardiogenic · <b>H</b>ypovolemic · <b>O</b>bstructive · <b>D</b>istributive</li></ul>
+      <h4>Septic shock</h4>
+      <ul>
+        <li>Organ dysfunction from a dysregulated host response to infection (acute rise in SOFA ≥2)</li>
+        <li><b>Septic shock:</b> vasopressors needed to keep MAP &gt;65 <b>and</b> lactate &gt;2 refractory to fluids</li>
+        <li>Pathophysiology: infection → cytokine storm → vasodilation & leak → microvascular injury → organ dysfunction</li>
+        <li>Warm shock: fever/hypothermia, rigors, tachycardia, tachypnea, warm/flushed/well-perfused, wide pulse pressure, confused. Later → cold shock</li>
+      </ul>
+      <h4>Elevated lactate</h4>
+      <ul>
+        <li><b>Type A</b> (tissue hypoxia): shock, severe HF, hypoxemia, anemia, CO poisoning, regional ischemia, cardiac arrest, cyanide</li>
+        <li><b>Type B</b> (non-hypoxic): B1 — liver failure, malignancy, thiamine deficiency, AKI, DKA; B2 — metformin, β-agonist, linezolid, propofol; B3 — inborn errors of metabolism</li>
+        <li>Sepsis (mixed): tissue hypoxia + catecholamine-driven anaerobic glycolysis — trend the lactate</li>
+      </ul>
+      <h4>Septic workup & resuscitation</h4>
+      <ul>
+        <li>Bloodwork: CBC + differential, coags, lytes/renal/liver, serum lactate, VBG</li>
+        <li>Cultures: blood ×2 before abx, culture any central line/indwelling device, urinalysis + urine culture, sputum culture/viral NAT</li>
+        <li>Imaging: CXR, PoCUS (cardiac, lung, IVC, JVP), ± CT if a deep/occult source is suspected</li>
+        <li>Fluids: 2–3 L (30 mL/kg crystalloid). Norepinephrine → target MAP &gt;65; add vasopressin if not improving; consider stress-dose hydrocortisone (50 mg q6h) if refractory to fluids/vasopressors</li>
+        <li>Trend lactate, urine output, exam, and hemodynamics q3h. Landmark steroid trials: APROCCHSS, ADRENAL, CORTICUS</li>
+      </ul>
+      <div class="flag">Refractory shock: confirm adequate source control, stress-dose steroids if not already, and consider occult bleed, adrenal insufficiency, or untreated arrhythmia. Avoid anchoring.</div>
+      <p>Abx guidance: <a href="https://aspires.vch.ca/" target="_blank" rel="noopener">ASPIRES →</a></p>`},
+
     {t:"Hypertension (inpatient)", body:`
       <ul>
         <li><b>R/o emergency:</b> headache, vision changes, dyspnea, chest pain, abdominal pain</li>
@@ -597,54 +638,6 @@ The patient tolerated the procedure well and there were no complications.</pre>`
         <li><b>Pre-procedure:</b> NPO at midnight. If asked for maintenance fluids, make sure an end time is ordered and check for no HF/risk of overload</li>
         <li><b>Documentation:</b> get the name and service/team of every patient. For anyone you assessed in person, recommend leaving a note</li>
       </ul>`},
-  ]
-},
-
-/* ========================= UNDIFFERENTIATED PATIENT ========================= */
-{
-  id:"undiff", ico:"🧩", name:"Undifferentiated Patient",
-  desc:"Structured approaches to the acutely unwell, undifferentiated patient.",
-  topics:[
-    {t:"Approach to shock", body:`
-      <p class="lead">Shock = failure of oxygen delivery and/or utilization — <b>not</b> synonymous with hypotension. DO₂ = CO × CaO₂.</p>
-      <h4>Stages</h4>
-      <ul>
-        <li><b>Compensated:</b> tachycardic but maintaining BP/perfusion; subtle exam findings; high sympathetic drive</li>
-        <li><b>Decompensated:</b> compensatory mechanisms fail → hypotension, AMS, oliguria, rising lactate</li>
-        <li><b>Irreversible</b></li>
-      </ul>
-      <h4>Recognize it on exam</h4>
-      <ul>
-        <li>Circulatory: tachycardia, narrow pulse pressure (SBP − DBP), delayed capillary refill, cool/mottled skin, weak peripheral pulses</li>
-        <li>Respiratory: tachypnea (compensating for acidosis), hypoxia (cardiogenic/obstructive)</li>
-        <li>End-organ: AMS, lactate, oliguria (&lt;0.5 mL/kg/h)</li>
-      </ul>
-      <div class="pill">Mixed venous gas (off PA, or pseudo-mixed off a central line) reflects returning venous blood — if oxygen utilization fails at the mitochondria, it can be falsely normal/high.</div>
-      <h4>Etiologies — "CHOD"</h4>
-      <ul><li><b>C</b>ardiogenic · <b>H</b>ypovolemic · <b>O</b>bstructive · <b>D</b>istributive</li></ul>
-      <h4>Septic shock</h4>
-      <ul>
-        <li>Organ dysfunction from a dysregulated host response to infection (acute rise in SOFA ≥2)</li>
-        <li><b>Septic shock:</b> vasopressors needed to keep MAP &gt;65 <b>and</b> lactate &gt;2 refractory to fluids</li>
-        <li>Pathophysiology: infection → cytokine storm → vasodilation & leak → microvascular injury → organ dysfunction</li>
-        <li>Warm shock: fever/hypothermia, rigors, tachycardia, tachypnea, warm/flushed/well-perfused, wide pulse pressure, confused. Later → cold shock</li>
-      </ul>
-      <h4>Elevated lactate</h4>
-      <ul>
-        <li><b>Type A</b> (tissue hypoxia): shock, severe HF, hypoxemia, anemia, CO poisoning, regional ischemia, cardiac arrest, cyanide</li>
-        <li><b>Type B</b> (non-hypoxic): B1 — liver failure, malignancy, thiamine deficiency, AKI, DKA; B2 — metformin, β-agonist, linezolid, propofol; B3 — inborn errors of metabolism</li>
-        <li>Sepsis (mixed): tissue hypoxia + catecholamine-driven anaerobic glycolysis — trend the lactate</li>
-      </ul>
-      <h4>Septic workup & resuscitation</h4>
-      <ul>
-        <li>Bloodwork: CBC + differential, coags, lytes/renal/liver, serum lactate, VBG</li>
-        <li>Cultures: blood ×2 before abx, culture any central line/indwelling device, urinalysis + urine culture, sputum culture/viral NAT</li>
-        <li>Imaging: CXR, PoCUS (cardiac, lung, IVC, JVP), ± CT if a deep/occult source is suspected</li>
-        <li>Fluids: 2–3 L (30 mL/kg crystalloid). Norepinephrine → target MAP &gt;65; add vasopressin if not improving; consider stress-dose hydrocortisone (50 mg q6h) if refractory to fluids/vasopressors</li>
-        <li>Trend lactate, urine output, exam, and hemodynamics q3h. Landmark steroid trials: APROCCHSS, ADRENAL, CORTICUS</li>
-      </ul>
-      <div class="flag">Refractory shock: confirm adequate source control, stress-dose steroids if not already, and consider occult bleed, adrenal insufficiency, or untreated arrhythmia. Avoid anchoring.</div>
-      <p>Abx guidance: <a href="https://aspires.vch.ca/" target="_blank" rel="noopener">ASPIRES →</a></p>`},
   ]
 },
 
