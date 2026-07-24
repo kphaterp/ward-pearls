@@ -697,7 +697,53 @@ The patient tolerated the procedure well and there were no complications.</pre>`
         <li>Moderate: fluid restrict + hold offending meds may suffice</li>
         <li><b>DDAVP</b> raises urine osmolality & prevents overcorrection ("DDAVP lock" + hypertonic)</li>
       </ul>
-      <div class="pill">SIADH: normal saline makes it <b>worse</b> (urine osm fixed high → net free-water gain). Hypertonic ⅓ volume is better.</div>`},
+      <div class="pill">SIADH: normal saline makes it <b>worse</b> (urine osm fixed high → net free-water gain). Hypertonic ⅓ volume is better.</div>
+      <h4>Severity (rough guide)</h4>
+      <ul>
+        <li>Na ≥125: free-water restrict, stop offending meds</li>
+        <li>Na 115–125: often hypovolemic → NS, unless SIADH is suspected</li>
+        <li>Na &lt;115: hypertonic</li>
+      </ul>
+      <h4>Diagnostic approach — serum osm → urine osm → urine Na</h4>
+      <div class="pill">Measure <b>before</b> giving diuretics or fluids, or the numbers become uninterpretable.</div>
+      <ul>
+        <li><b>Serum osm &gt;295 (osmotic/translocational):</b> hyperglycemia (correct Na +3 per 10 mmol/L glucose rise), mannitol/other osmoles, severe uremia</li>
+        <li><b>Serum osm 275–295 (pseudohyponatremia):</b> hyperlipidemia, hyperproteinemia (myeloma), post-TURP (glycine/mannitol)</li>
+        <li><b>Serum osm &lt;275 (true hypotonic):</b> continue to urine osm</li>
+      </ul>
+      <ul>
+        <li><b>Urine osm low (&lt;100, ADH off — appropriate):</b> primary polydipsia, low solute intake (beer potomania, tea &amp; toast), inappropriate IV fluids</li>
+        <li><b>Urine osm high (&gt;100, ADH on — inappropriate) → check urine Na:</b></li>
+        <ul>
+          <li>UNa &lt;20 (aldosterone on): true hypovolemia (GI/skin losses) or hypervolemia (CHF, cirrhosis, nephrotic) → LFTs, TTE, 24 h urine protein</li>
+          <li>UNa 20–40: SIADH (euvolemic — malignancy, lung, pain, CNS)</li>
+          <li>UNa &gt;40 (aldosterone off): renal salt loss (thiazides, cerebral salt wasting, adrenal insufficiency, salt-losing nephropathy) → TFTs, cortisol</li>
+        </ul>
+      </ul>
+      <h4>By volume status</h4>
+      <ul>
+        <li>Hypervolemic: CHF, renal failure/nephrotic, liver · Euvolemic: SIADH, hypothyroid, adrenal · Hypovolemic: GI losses, diuretics</li>
+      </ul>
+      <div class="flag">Osmotic demyelination (ODS): in chronic hyponatremia the brain adapts, so over-rapid correction shrinks cells → demyelination (dysarthria, dysphagia, paresis, locked-in), delayed 2–6 days. Highest risk with Na &lt;105, hypertonic saline, and rapid rise. Limit correction to ≤6–8 (avoid &gt;10–12 in 24 h or &gt;18 in 48 h).</div>
+      <h4>Special causes</h4>
+      <ul>
+        <li><b>Beer potomania / tea &amp; toast:</b> severe (often &lt;110) from low solute intake + excess free water; correct slowly (overcorrects easily)</li>
+        <li><b>CSW vs SIADH:</b> both have high urine osm/Na (ADH on, aldo off). Cerebral salt wasting is <b>hypovolemic with high urine output</b>; SIADH is euvolemic. CSW: 3% NS to goal 135–140, fludrocortisone, salt tabs</li>
+      </ul>
+      <h4>ADH stimuli</h4>
+      <ul>
+        <li>↑ ADH: hyperosmolality, low effective arterial volume, hypotension, pain, stress, nausea, hyperthermia, CNS/lung pathology, drugs (thiazide, NSAIDs, anticonvulsants, SSRIs)</li>
+        <li>↓ ADH: low osmolality, high effective volume, ethanol, hypothermia</li>
+      </ul>
+      <h4>Management specifics</h4>
+      <ul>
+        <li>Treat if symptomatic, severe (&lt;120), or acute. Correct K first (volume depletion → aldosterone → K wasting)</li>
+        <li>Infusate over 24 h = TBW × (desired − serum Na) / [Na]<sub>infusate</sub>; [Na]: NS 154, 3% 513, RL 130; TBW ≈ 0.5 × wt (kg). <b>Then halve the calculated rate</b> and recheck Na q1–2 h — once saline turns off ADH, free-water diuresis can overcorrect fast</li>
+        <li><b>3% NS:</b> 100–150 mL boluses to get out of the seizure range (≈2 mmol bump per 150 mL); reserve for seizure / severe ↓LOC / SIADH</li>
+        <li><b>SIADH:</b> NPO/SLIV, 100 mL 3% NS boluses with lytes q2 h, urea or salt tabs, fluid-restrict to &lt;500 mL below urine output</li>
+        <li><b>DDAVP lock</b> overnight (2–4 mcg IV q8h) fixes urine osm and prevents free-water-driven overcorrection</li>
+        <li>Dialysis patients: usually over-drinking between sessions → fluid restrict</li>
+      </ul>`},
 
     {t:"Acid-base approach", body:`
       <h4>Steps</h4>
