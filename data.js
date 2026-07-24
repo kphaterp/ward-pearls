@@ -1024,6 +1024,218 @@ The patient tolerated the procedure well and there were no complications.</pre>`
         <li>Ramipril should be BID. Resistant HTN → refer to a resistant-HTN clinic</li>
       </ul>`},
 
+    {t:"Addiction medicine", body:`
+      <div class="pill">Addiction Medicine clinician support line: <b>778-945-7619</b>, 24/7, 365 days/year.</div>
+      <h4>Acute alcohol withdrawal</h4>
+      <p class="lead">Follows a predictable path.</p>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/addiction-alcohol-withdrawal-timeline.png" alt="Alcohol withdrawal timeline" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Alcohol withdrawal timeline</figcaption></figure>
+      <ul>
+        <li>Risk stratify with <b>PAWSS</b> (sensitive &amp; specific)</li>
+        <li>Low risk: conservative management, regular check-ins; consider gabapentin 300–600 mg TID ×3–5 days</li>
+        <li>High risk: refer to higher level of care for possible inpatient management</li>
+        <li><b>CIWA</b> (non-specific, many subjective criteria; scored q1h): &gt;10 → diazepam 10 mg PO / 5 mg IV; &gt;20 → double. Use lorazepam if elderly or significant liver disease</li>
+      </ul>
+      <p>Some meds reduce heavy drinking; others promote abstinence.</p>
+      <h4>Opioids</h4>
+      <ul>
+        <li>Treating acute opioid withdrawal improves comfort, lowers complications and AMA rates, builds rapport, reduces in-hospital illicit use, and lowers post-discharge overdose risk</li>
+        <li>Maximize non-opioid analgesics. Expect higher doses than usual (e.g. hydromorphone 8–16 mg q2h PRN)</li>
+        <li>Consider opioid agonist treatment: methadone, SROM (Kadian), buprenorphine — dose-adjust for missed doses (tolerance is lost quickly)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/addiction-opioid-agonist-dosing-1.png" alt="Opioid agonist treatment dosing (1)" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Opioid agonist treatment dosing (1)</figcaption></figure>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/addiction-opioid-agonist-dosing-2.png" alt="Opioid agonist treatment dosing (2)" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Opioid agonist treatment dosing (2)</figcaption></figure>
+      <div class="flag">~50% of black-market opioids contain benzodiazepines → beware of BZ withdrawal in patients with OUD. <b>Medetomidine malignant withdrawal:</b> triad of tachycardia, hypertension, and significant nausea/vomiting in someone using unregulated drugs → emergency; treat with high-dose clonidine ± ICU. Mixed withdrawal syndromes → call Addictions.</div>`},
+
+    {t:"Anticoagulation", body:`
+      <ul>
+        <li><b>COBRRA</b>: significantly lower bleed risk with apixaban vs rivaroxaban at 3 months</li>
+        <li>An acute clot is more likely to embolize than a chronic clot. <a href="https://thrombosiscanada.ca/" target="_blank" rel="noopener">Thrombosis Canada</a> has great guidelines</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-practical-choices.png" alt="Practical anticoagulant choices" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Practical anticoagulant choices</figcaption></figure>
+      <h4>VTE workup</h4>
+      <ul><li>Doppler ultrasound or CTPE, plus bedside PoCUS, ECG, echo</li></ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-vte-workup.png" alt="VTE workup" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">VTE workup</figcaption></figure>
+      <h4>Provoked vs unprovoked</h4>
+      <ul>
+        <li><b>Transient:</b> active malignancy (excised/"cured"), recent surgery, hospitalization or immobility, long-haul travel, estrogen-containing hormone therapy, pregnancy/postpartum</li>
+        <li><b>Non-transient:</b> active non-curable/ongoing malignancy, acquired prothrombotic states (inflammatory syndromes, APLA, HIT), congenital thrombophilias (factor V Leiden, protein C/S deficiency, antithrombin deficiency, prothrombin mutation)</li>
+        <li>Workup: history, family history, obstetric history. Tests: β-hCG, APLA (cardiolipin IgG/IgM, β2-glycoprotein IgG/IgM, lupus anticoagulant), HIT, congenital panel</li>
+        <li>Caveats: not reliable in acute thrombosis (protein C/S, antithrombin) or on anticoagulation (LAC, protein C/S); APLA serologies change management</li>
+      </ul>
+      <h4>PE risk stratification</h4>
+      <ul><li>Shock or SBP &lt;90 = high risk; then use sPESI. Look for RV strain on CT, echo, troponin, BNP</li></ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-pe-risk-stratification.png" alt="PE risk stratification" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">PE risk stratification</figcaption></figure>
+      <h4>Agents</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-agents-1.png" alt="Anticoagulant agents (1)" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Anticoagulant agents (1)</figcaption></figure>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-agents-2.png" alt="Anticoagulant agents (2)" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Anticoagulant agents (2)</figcaption></figure>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-agents-3.png" alt="Anticoagulant agents (3)" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Anticoagulant agents (3)</figcaption></figure>
+      <ul>
+        <li><b>Heparin (UFH/LMWH):</b> LMWH preferred for most stable VTE (predictable PK, weight-based dosing, lower bleed risk, much lower HIT). UFH when rapid reversal/procedure is planned, in severe renal failure, or in unstable patients needing minute-to-minute titration
+          <ul>
+            <li>Enoxaparin 1 mg/kg SC q12h (adjust in increments of 20 mg; avoid in ESRD — mostly renally cleared)</li>
+            <li>Dalteparin 200 U/kg daily or 100 U/kg q12h · Tinzaparin 175 U/kg daily (least renally cleared)</li>
+            <li>Avoid the enoxaparin 1.5 mg/kg q24h option for acute VTE treatment</li>
+          </ul>
+        </li>
+        <li><b>Warfarin (VKA):</b> slow onset (full effect 5–10 days), requires bridging at initiation for acute VTE, target INR 2–3 (aim 2.5). Preferred for mechanical valves, rheumatic mitral stenosis, and APLA</li>
+        <li><b>DOACs</b> (apixaban, rivaroxaban, edoxaban, dabigatran) — when to avoid: weight extremes (&lt;40 or &gt;120–140 kg), pregnancy/breastfeeding, drug interactions, platelets &lt;50, GI/GU/intracranial malignancy, APLA, high clot burden (LMWH preferred acutely), eGFR &lt;15 or dialysis (unless specialist-guided), bariatric surgery/extensive bowel resection, food insecurity (rivaroxaban)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/anticoag-doac-avoid.png" alt="When to avoid DOACs" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">When to avoid DOACs</figcaption></figure>
+      <ul>
+        <li><b>Apixaban:</b> t½ 12 h, lowest renal clearance among DOACs. VTE 10 mg BID ×7 days, then 5 mg BID. Avoid mechanical valves, APLA, significant rheumatic MS, pregnancy/breastfeeding. Major CYP3A4/P-gp interactions (watch anticonvulsants)</li>
+        <li><b>Rivaroxaban:</b> VTE 15 mg BID ×21 days, then 20 mg daily. Caution in renal impairment; avoid strong CYP3A4/P-gp interactions; take with food</li>
+        <li><b>Edoxaban:</b> attention to renal function and weight. Reduce if CrCl 15–50, weight ≤60 kg, or certain P-gp inhibitors; do not use if CrCl &gt;95. LMWH lead-in for 5–10 days</li>
+      </ul>`},
+
+    {t:"ECGs for IM", body:`
+      <h4>Basics</h4>
+      <ul><li>Small box 40 ms, big box 200 ms, 5 big boxes = 1 s; 0.1 mV = 1 small box, 1 mV = 2 big boxes</li></ul>
+      <h4>Systematic read — "ARRIVALS"</h4>
+      <ul>
+        <li><b>Axis:</b> R&gt;S positive, R=S equiphasic, R&lt;S negative (leads I, aVF, II if unsure)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-axis.png" alt="Axis" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Axis</figcaption></figure>
+      <ul>
+        <li><b>Rate:</b> 300/(big boxes) for regular, or #QRS ×6</li>
+        <li><b>Rhythm:</b> sinus (upright I/II, inverted aVR); regular vs regularly irregular vs irregularly irregular</li>
+        <li><b>Intervals:</b> PR &lt;200, QRS &lt;120, QT &lt;450 or &lt;½ RR</li>
+        <li><b>Volume:</b> atrial and ventricular enlargement (below)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-atrial-enlargement.png" alt="Atrial enlargement criteria" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Atrial enlargement criteria</figcaption></figure>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-ventricular-enlargement.png" alt="Ventricular enlargement criteria" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Ventricular enlargement criteria</figcaption></figure>
+      <ul>
+        <li><b>Acute ischemia:</b> ST elevation, ST depression, T-wave changes (can be non-specific)</li>
+        <li><b>Prior ischemia:</b> Q waves → higher arrhythmia propensity, EF may be down</li>
+        <li><b>Last ECG:</b> unchanged is reassuring · <b>Systemic:</b> pacer spikes, artifact, patterns (hyperkalemia, digoxin, S1Q3T3)</li>
+      </ul>
+      <h4>Is this a STEMI?</h4>
+      <ul>
+        <li>Need typical symptoms + ST-elevation criteria in contiguous leads: any lead ≥1 mm (except V2/V3); V2/V3 women ≥1.5 mm, men ≥40 yo ≥2 mm, men &lt;40 ≥2.5 mm</li>
+        <li>Should have reciprocal changes (PAILS: anterior → inferior → lateral → septal → posterior → anterior)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-mi-territories.png" alt="MI territories" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">MI territories</figcaption></figure>
+      <h4>Other ischemic changes</h4>
+      <ul>
+        <li>Cannot localize: ST depression, T-wave inversion/flattening</li>
+        <li>Can localize — Q wave: no initial R wave, &gt;30 ms (1 small box) wide and deep, contiguous (if wide/deep enough to see the pink paper inside → pathologic); or ST elevation</li>
+        <li>Lead III is a "freebie": isolated Q waves and T-wave inversion there can be normal</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-pathologic-q-wave.png" alt="Pathologic Q wave" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Pathologic Q wave</figcaption></figure>
+      <h4>Narrow complex tachycardia</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-narrow-complex-tachy.png" alt="Narrow complex tachycardia" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Narrow complex tachycardia</figcaption></figure>
+      <ul>
+        <li>QRS &lt;120. Regular: AV-node dependent (AVNRT, AVRT) vs non-dependent (AT, atrial flutter). Irregular: Afib, MAT</li>
+        <li>Approach: stable vs unstable · wide vs narrow · regular vs irregular</li>
+        <li>Irregularly irregular = Afib 95% (flutter with variable conduction, MAT, AT with variable conduction = other 5%). Regular has 6 ddx: sinus tach, ectopic AT, flutter, junctional, AVRT, AVNRT</li>
+        <li>Look for P waves; short-RP tachycardia ddx = AVRT, AVNRT, junctional</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-p-wave-rp.png" alt="P waves / RP relationship" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">P waves / RP relationship</figcaption></figure>
+      <h4>Wide complex differential (5)</h4>
+      <ul>
+        <li>VT, SVT with aberrancy, pre-excitation (delta wave), pacemaker, artifact</li>
+        <li>Confirm VT: VA dissociation (V&gt;A = VT, A&gt;V = SVT with aberrancy), capture and fusion complexes</li>
+        <li>Support VT: positive/negative precordial concordance; axis (positive aVR / extreme RAD, no initial Q)</li>
+        <li>Else use algorithms (Brugada → Vereckei)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-wide-complex-vt-avr.png" alt="Wide complex / aVR algorithm" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Wide complex / aVR algorithm</figcaption></figure>
+      <h4>Bradyarrhythmia</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/ecg-bradyarrhythmia.png" alt="Bradyarrhythmia approach" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Bradyarrhythmia approach</figcaption></figure>
+      <ul><li>Find P waves; assess P:QRS association. Suprahisian = no pacemaker; infrahisian = pacemaker unless reversible cause. AV node decrements with faster activity; 2:1 block sits between supra- and infrahisian</li></ul>
+      <h4>Syncope — ECG red flags "QTBRIDE"</h4>
+      <ul>
+        <li>Assuming no obvious tachy/brady, r/o significant VT or infrahisian block → call CCU/ICU. Document red flags:</li>
+        <li><b>QT</b> (QTc &gt;500 → don't miss torsades) · <b>B</b>rugada · <b>R</b>ight heart strain (1 in 8 first syncope have PE) · <b>I</b>schemia (pathologic Q → scar-mediated monomorphic VT) · <b>D</b>elta wave (pre-excited AF) · <b>E</b>psilon wave (ARVC)</li>
+      </ul>`},
+
+    {t:"Management of Afib", body:`
+      <figure style="margin:12px 0;text-align:center;"><img src="images/afib-rate-control-overview.png" alt="Afib management overview" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Afib management overview</figcaption></figure>
+      <ul>
+        <li>1 in 5 strokes are due to Afib; 1 in 3 Afib patients will have a stroke. Use <b>CHADS2</b> (Canada); CHA₂DS₂-VASc is American. CHADS ×2 ≈ annual stroke risk % (CHADS 2 ≈ 4%/yr)</li>
+        <li><b>CHADS-65</b> decides when to start anticoagulation — anyone with &gt;2%/yr stroke risk benefits</li>
+      </ul>
+      <h4>Acute management</h4>
+      <ul>
+        <li>Unstable → cardiovert. Stable → is there an underlying driver (CHF, sepsis)? If yes, treat the cause (antibiotics, diuretics)</li>
+        <li><b>Good BP:</b> metoprolol IV 2.5–5 mg q15min (telemetry only; careful in HF — give a concurrent PO dose because the IV wears off), or PO metoprolol 12.5–25 mg. Diltiazem IV 10–20 mg q15min (avoid if LVEF &lt;40%)</li>
+        <li><b>Borderline BP:</b> digoxin IV (0.5 mg ×1, then 0.25 mg q6h ×2 = 1 mg load; halve for renal dysfunction — ↓chronotropy, maintains inotropy, no BP/EF drop) or amiodarone IV (150 mg bolus, then 1 mg/hr ×6h, 0.5 mg/hr ×18h; needs telemetry + ICU/HAU; for very unstable patients)</li>
+      </ul>
+      <h4>Cardioversion</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/afib-cardioversion-timing.png" alt="When to safely cardiovert" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">When to safely cardiovert</figcaption></figure>
+      <ul>
+        <li>Left side → must initiate OAC for 3 weeks prior. Right side → cardiovert and OAC as soon as possible</li>
+        <li>Setup: good IV access; monitors (pulse ox, O₂, BP cycled q1min, RT at bedside); pressors (phenylephrine 100 mcg/mL, give 100–200 mcg pushes PRN); pads (flank or AP, with machine ECG leads to synchronize and allow demand pacing); sedation (fentanyl 50 mcg + midazolam 2 mg, or ketamine 1 mg/kg)</li>
+        <li>150–200 J biphasic synchronized; hold the shock button when synchronized. Post-CV pacing if needed: rate 70, output 175 mA, demand mode</li>
+      </ul>
+      <h4>Secondary Afib</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/afib-secondary-workup.png" alt="Secondary Afib workup" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Secondary Afib workup</figcaption></figure>
+      <ul><li>A common safe approach: discharge on AC with an outpatient Holter, confirm no baseline Afib, then shared decision about stopping. Threshold to anticoagulate is low</li></ul>
+      <h4>Special situations</h4>
+      <ul>
+        <li><b>Valvular Afib</b> (moderate–severe mitral stenosis, mechanical valve): &gt;5%/yr stroke risk — <b>do not use CHADS2</b>. INVICTUS showed VKA superiority to rivaroxaban → use warfarin</li>
+        <li><b>ESRD:</b> CKD is both prothrombotic and a bleeding risk. RENAL-AF showed ESRD patients on AC had ~10× more bleeding than stroke risk</li>
+        <li><b>Post-ablation:</b> 0–2 months = high thromboembolic risk; &gt;2 months no RCT supports stopping, so if CHADS2 &gt;2 continue AC (ALONE-AF/OCEAN may suggest stopping is reasonable — Afib clinic decides, don't stop on your own)</li>
+      </ul>
+      <h4>Bridging &amp; rate vs rhythm</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/afib-bridge-trial.png" alt="BRIDGE trial" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">BRIDGE trial</figcaption></figure>
+      <ul>
+        <li><b>BRIDGE:</b> for Afib on warfarin, no bridging was non-inferior for VTE prevention and reduced major bleeding — except CHADS2 5–6</li>
+        <li><b>AFFIRM:</b> no survival benefit rate vs rhythm (rhythm trended worse, but poor rhythm control and long-standing Afib). <b>EAST-AFNET 4:</b> early Afib (&lt;12 mo) rhythm control ↓ CV death/stroke/HF/ACS hospitalizations. <b>EARLY-AF:</b> cryoablation ↓ recurrence. → Early Afib: consider rhythm control or refer to Afib clinic</li>
+      </ul>
+      <div class="flag">Danger rhythms — BB/digoxin/amiodarone/diltiazem contraindicated: <b>regularized Afib</b> = complete heart block with underlying Afib → cardiology consult. <b>Irregularly irregular with varying QRS beat-to-beat</b> = WPW with Afib → IV procainamide.</div>`},
+
+    {t:"Heart failure", body:`
+      <h4>Classification</h4>
+      <ul>
+        <li>AHA/ACC stages (rarely used clinically) · NYHA class</li>
+        <li>EF: ≤40% reduced; &gt;40% non-reduced (40–50% previously "mildly reduced"). A normal BNP does not exclude HFpEF or HFmrEF</li>
+      </ul>
+      <h4>Causes</h4>
+      <ul><li>Ischemic, arrhythmic (tachyarrhythmia), hypertensive, valvular; less common: toxic, inflammatory, autoimmune, infectious, metabolic, infiltrative (amyloid), genetic</li></ul>
+      <h4>Acute (ADHF)</h4>
+      <ul>
+        <li>How sick? CTU-appropriate? Need help? Why are they in ADHF? Early investigations + PoCUS; stabilize</li>
+        <li>SCAI sick/not-sick — watch for <b>normotensive cardiogenic shock</b> (cool/clammy, cap refill, lactate)</li>
+        <li>Forrester: aim <b>warm &amp; dry</b>. Warm &amp; wet is common (mortality 9%, preserved CI but overloaded); cold &amp; wet = cardiogenic shock (mortality 51%); cold &amp; dry (hypovolemic, poor CI)</li>
+      </ul>
+      <h4>Precipitants</h4>
+      <ul><li>Acute ↓LVEF (MI, PE, takotsubo, myocarditis); volume change (nonadherence, renal failure, hypovolemia); arrhythmia (new/worse Afib, brady, RV pacing); valvular; meds/substances; other (uncontrolled HTN, infection/sepsis, thyroid, anemia)</li></ul>
+      <h4>Investigations</h4>
+      <ul><li>CBC, chem7, extended lytes, troponin, NT-proBNP, LFTs; consider lactate (if shock), TSH, ferritin/iron, A1c, lipids; ECG, CXR; echo (within 6 months usually not repeated unless status changed)</li></ul>
+      <h4>Acute management</h4>
+      <ul>
+        <li><b>Afterload reduction:</b> nitro patch (less often infusion); in CCU inotrope + afterload reduction (milrinone or dobutamine)</li>
+        <li><b>Respiratory:</b> pulmonary edema → diurese, drain a pleural effusion if present; cardiogenic pulmonary edema responds well to PPV — CPAP/BiPAP reduce preload and afterload (time-limited 3 h trial, involve ICU/CCU early; good for left not right heart failure). <b>Flash pulmonary edema</b> is an afterload problem (HTN, acute MR) → nitro + NIPPV; may be volume-deplete (may not need diuretics)</li>
+        <li><b>Optimize volume:</b> if IV diuresis, recheck in 1–2 h. Lasix: home PO ×2 for IV (40 PO → 80 IV); expect 150–200 cc UO in first 2 h; ↑ dose if ↓CrCl (max single 250–300 mg IV, usually ≤160 mg; infusion 20 mg/hr). Augment with thiazide (metolazone 5–10 mg PO 30 min pre-Lasix) ± acetazolamide 250–500 mg (bicarb wasting — good in contraction alkalosis; avoid CrCl &lt;30) = "nephron bomb". Refractory over 12–24 h → ICU/nephrology</li>
+        <li><b>Optimize MAP:</b> afterload reduction (HFrEF EF 20–30% target SBP 90–100; HTN crisis; MR). Options: NG patch 0.4–0.8 mg/h (off q12h), ISDN + hydralazine PO, long-term ACEi/ARB, critical-care nitroprusside / milrinone &gt; dobutamine. Hypotensive or end-organ damage → call for help</li>
+        <li><b>Optimize HR:</b> sinus tachy usually compensates for low CO. Afib — if unstable follow the unstable path; if stable, diurese; avoid CCBs (diltiazem/verapamil contraindicated if EF &lt;40% / ADHF), use BB (avoid if BB-naive, hypotensive, or in cardiogenic shock — negative inotropy), digoxin (+inotropy/−chronotropy, renal adjust), amiodarone (needs CCU/ICU)</li>
+      </ul>
+      <h4>Monitoring</h4>
+      <ul><li>Hemodynamics, O₂ needs, end-organ perfusion, lytes, renal function. Adequate diuresis = UO + daily standing weights (target −0.5 to −1 kg/day; know the dry weight); urine Na &gt;50 at 2 h post-Lasix</li></ul>
+      <h4>Chronic management</h4>
+      <ul>
+        <li>Non-pharm: exercise (aerobic + resistance), diet ± fluid ± salt restriction, counseling (EtOH, smoking, driving), cardiac rehab, early advance-care planning and palliative referral</li>
+        <li><b>GDMT (HFrEF):</b> ACEi/ARB/ARNI + BB (carvedilol, bisoprolol, metoprolol tartrate) + SGLT2i + MRA; titrate to max tolerated in 3–6 months (can start all low-dose together). Bisoprolol 1.25 mg = carvedilol 3.125 mg BID = metoprolol 12.5 mg BID; spironolactone 12.5–25 mg (watch hyperK, avoid CrCl &lt;30); empagliflozin or dapagliflozin 10 mg daily; ramipril 2.5 mg daily/BID (mortality benefit). ACEi → ARNI needs a 36 h washout</li>
+        <li><b>HFnrEF:</b> SGLT2i, MRA ± ARB/ARNI ± GLP1a; treating the underlying cause and risk factors matters most</li>
+        <li><b>Iron deficiency:</b> replace if ferritin &lt;100, or 100–300 with TSAT &lt;20%</li>
+      </ul>`},
+
+    {t:"Hyperglycemia & insulin management", body:`
+      <p class="lead">Inpatient glycemic control (distinct from the brief ward-call top-up and from DKA/HHS). See <a href="https://guidelines.diabetes.ca/cpg/chapter13" target="_blank" rel="noopener">Diabetes Canada antihyperglycemics</a>.</p>
+      <ul><li>Drivers: illness, stress, medications (especially steroids), diet/activity changes (tube feeds, TPN, less active than home, variable intake)</li></ul>
+      <h4>Insulin: basal / bolus / correction</h4>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/hyperglycemia-insulin-types.png" alt="Insulin types / onset-duration" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Insulin types / onset-duration</figcaption></figure>
+      <ul>
+        <li><b>Basal</b> (long-acting, e.g. glargine): prevents excess hepatic gluconeogenesis when fasting. <b>Do not stop when NPO</b> — reduce dose (~60%). Judge adequacy by bedtime → AM sugars</li>
+        <li><b>Bolus</b> (before meals): covers carbs. Insulin-to-carb ratio (e.g. 15 g : 1 unit); ICR = 500/TDD</li>
+        <li><b>Sliding scale</b> (correction): order even if NPO. Based on insulin sensitivity factor (ISF 2 → BG drops ~2 mmol/L per unit of short-acting). Low/medium/high scales map to ISF; write a custom scale (set a target, grade by ISF)</li>
+      </ul>
+      <figure style="margin:12px 0;text-align:center;"><img src="images/hyperglycemia-sliding-scale.png" alt="Sliding scale example" loading="lazy" style="max-width:100%;height:auto;border:1px solid #ddd;border-radius:8px;" onerror="this.parentElement.style.display='none'"><figcaption style="font-size:12px;color:#888;margin-top:4px;">Sliding scale example</figcaption></figure>
+      <ul>
+        <li><b>NPO:</b> hold scheduled prandial and oral agents (reintroduce gradually once eating); give reduced basal (~60%) — do not stop basal</li>
+        <li><b>Tube feeds:</b> note continuous vs intermittent, duration, carb content. Continuous is often covered with insulin R q6h; intermittent → match insulin type/timing to the feed</li>
+        <li><b>TPN:</b> note carb content; often covered by adding insulin R to the TPN bag</li>
+      </ul>`},
+
   ]
 },
 
