@@ -480,14 +480,50 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       </ul>`},
 
     {t:"Inpatient hyperglycemia", body:`
-      <p class="lead">Typically called for <b>CBG &gt;18</b> (sliding-scale order to call MD).</p>
-      <h4>Insulin top-up</h4>
+      <p class="lead">Called for a high CBG (often <b>&gt;18</b> per sliding-scale order). Frame it: DKA? NPO? What fluids are running?</p>
+      <h4>Why it happens</h4>
       <ul>
-        <li>18–20 → give the highest level of the sliding scale</li>
-        <li>&gt;20 → review total daily insulin requirement (reasonable to add an extra 2–3 units); recheck CBG at 0300 if unsure</li>
+        <li>Hormonal (stress, illness); meds (steroids, D5); holding home oral agents; NG feeds / TPN; less active than at home</li>
+        <li>Harms: hypovolemia, impaired immunity & wound healing, delirium, ↑ morbidity/mortality</li>
       </ul>
-      <h4>Context first</h4>
-      <ul><li>DKA? NPO status? What type of fluids are running?</li></ul>`},
+      <h4>Quick top-up (the overnight call)</h4>
+      <ul>
+        <li>18–20 → give the highest sliding-scale level</li>
+        <li>&gt;20 → review total daily insulin (reasonable to add 2–3 units); recheck CBG at 0300 if unsure</li>
+        <li>Give a new regimen ~24 h to take effect before judging it; a top-up speeds things along</li>
+      </ul>
+      <h4>When to start insulin</h4>
+      <ul>
+        <li>Metabolic decompensation: polyuria/polydipsia, blurred vision, weight loss, volume depletion, ketosis, HHS/DKA</li>
+        <li>Too sick for oral: poor intake / ↓LOC, AKI, unclear trajectory (may need OR/ICU)</li>
+      </ul>
+      <details><summary>Insulin types</summary><div class="inner"><ul>
+        <li><b>Long:</b> glargine (~24 h), degludec (~42 h)</li>
+        <li><b>Short:</b> lispro (onset ~15 min, peak ~1 h, 2–4 h), aspart (similar)</li>
+        <li><b>Medium:</b> Humulin R (onset 30–60 min, 6–8 h), NPH (onset 1–3 h, peak 3–6 h, 10–16 h)</li>
+      </ul></div></details>
+      <h4>Building a basal-bolus regimen</h4>
+      <ul>
+        <li>Weight-based: <b>0.3–0.5 u/kg/day total → 50% basal</b>; sliding scale to estimate the bolus; consider lispro to the largest meal</li>
+        <li>Convert mixed insulin (NPH+lispro 10 u BID = 20 u/day): 70% NPH (14 u) + 30% lispro (6 u)</li>
+      </ul>
+      <details><summary>Reading the CBGs</summary><div class="inner"><ul>
+        <li>Write CBGs out by meal (dashes) with the insulin schedule underneath</li>
+        <li>High all day → increase basal <b>and</b> bolus</li>
+        <li>Lunch high → increase the breakfast bolus by the lunch sliding-scale amount; recheck at dinner</li>
+        <li>Daytime high, fasting normal → total the sliding-scale amounts, divide TID; don't change basal</li>
+        <li>Breakfast <b>and</b> lunch high → 3 AM CBG to r/o nocturnal hypoglycemia (may need to <b>lower</b> basal / HS dose — counterintuitive stress response); r/o overnight snacking</li>
+        <li>Morning NPH shows in the dinner CBG; dinner NPH shows in the fasting CBG. Sliding scale may have a cap</li>
+      </ul></div></details>
+      <h4>Inpatient targets (mmol/L)</h4>
+      <ul><li>Non-critically ill 5–8 · critically ill 6–10 · ACS 7–10 · periop 5–10 · pregnancy/labour 4–7 · terminally ill: loosen</li></ul>
+      <details><summary>Special situations</summary><div class="inner"><ul>
+        <li><b>High-dose steroids:</b> NPH &gt; glargine (matches prednisone's profile, avoids morning lows) — add NPH ~10 u with the steroid dose; up-titrate for dinner/HS highs; down-titrate with the taper</li>
+        <li><b>Continuous feeds:</b> regular insulin q6h (± glargine); back up with D5W if feeds held</li>
+        <li><b>NPO:</b> decrease long-acting 50–75% (stress still raises glucose); hold pre-prandial bolus; continuous sliding scale prevents escalation; T1DM may need a D5W infusion</li>
+        <li><b>Transitioning off:</b> when renal function is stable, intake good, trajectory positive — start metformin first, then wean basal/bolus (oral-agent choice per comorbidities)</li>
+      </ul></div></details>
+    `},
 
     {t:"Falls &amp; head injury", body:`
       <h4>First move</h4>
