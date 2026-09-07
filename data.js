@@ -690,6 +690,59 @@ The patient tolerated the procedure well and there were no complications.</pre>`
       <ul><li>Opioids + bedside fan (trigeminal). Type 1 (hypopharyngeal) secretions → glycopyrrolate (suctioning ineffective)</li></ul>
       <h4>End-of-life signs</h4>
       <ul><li>Cyanosis (look around the knees), rhythmic mandibular breathing, loss of radial pulses (very sensitive), secretions. Use EOL order sets; pre-communicate double effect</li></ul>`},
+    {t:"Approach to falls in geriatric patient", body:`
+      <h4>History</h4>
+      <ul>
+        <li>Characterize the fall: first fall, frequency, and the pre-fall / during-fall / post-fall story; serious injuries; fall pattern over the last 12 months</li>
+        <li>Triggers: going up stairs, getting out of bed, walking downhill</li>
+        <li>Screen for Parkinson's in recurrent fallers — motor "TRAP" (tremor, rigidity, akinesia, postural instability) and non-motor features (autonomic dysfunction, RBD, fatigue, mood/cognition)</li>
+      </ul>
+      <h4>Contributing factors</h4>
+      <ul>
+        <li><b>Acute precipitant</b> — infection, medication change, arrhythmia, etc.</li>
+        <li><b>Intrinsic:</b> age, sarcopenia/weakness, gait/balance problems, vision, postural hypotension, chronic conditions (arthritis, stroke, incontinence, diabetes/neuropathy, Parkinson's, dementia)</li>
+        <li><b>Extrinsic:</b> environmental/tripping hazards, lighting, improper gait-aid use, medications, lack of rails/supports</li>
+      </ul>
+      <h4>Exam & workup</h4>
+      <ul>
+        <li>Orthostatic vitals; neuro exam (tone, strength, coordination)</li>
+        <li>Performance tests: timed up-and-go, 5× sit-to-stand, unipedal stance, tandem stance</li>
+        <li>Medication review (PharmaNet) — sedatives, antihypertensives, polypharmacy</li>
+      </ul>
+      <h4>Management & safety</h4>
+      <ul>
+        <li>Bone health and vitamin D</li>
+        <li>Home safety assessment, life-alert device, appropriate gait aids</li>
+        <li>Early allied health involvement (PT/OT)</li>
+        <li>Resource: <a href="https://cgatoolkit.ca/" target="_blank" rel="noopener">CGA toolkit →</a></li>
+      </ul>`},
+    {t:"Approach to cognition change in geriatric patient", body:`
+      <h4>First: delirium vs dementia</h4>
+      <ul>
+        <li>Establish baseline vs now. Delirium is acute/fluctuating with inattention — rule it out and work it up first before attributing change to dementia</li>
+      </ul>
+      <h4>History — onset & time course</h4>
+      <h4>Domains of cognition</h4>
+      <ul>
+        <li><b>Attention/concentration:</b> difficulty following a TV/movie plot, easily distracted, re-reading the same page</li>
+        <li><b>Memory:</b> STM — missed appointments, repeating themselves, asking the same question (interval shortens as it worsens; often noticed by family). LTM — take the social history, then fact-check with family</li>
+        <li><b>Language:</b> word-finding difficulty, paraphrasing/circular errors, phonemic errors (consider PPA if language-predominant)</li>
+        <li><b>Executive function:</b> planning/organizing, multitasking, judgment, problem-solving, mental rigidity</li>
+        <li><b>Visuospatial:</b> getting lost in familiar places, dents in the car, trouble recognizing faces</li>
+        <li><b>Perceptual disturbance</b></li>
+        <li><b>Personality/mood:</b> apathy, disinhibition, socially inappropriate behaviour</li>
+      </ul>
+      <h4>Safety</h4>
+      <ul>
+        <li>Wandering, leaving stoves on, taps running (flooding)</li>
+        <li>Driving safety; capacity and advance care planning (involve the SDM if capacity is limited)</li>
+      </ul>
+      <h4>Exam & workup</h4>
+      <ul>
+        <li>Screening cognitive exam: MiniCog (3-word recall, clock draw) — not for inpatients; attention testing (serial 7s, months/days reversed)</li>
+        <li>Labs: CBC, CP7, B12, TSH, extended lytes, albumin/liver panel, ?syphilis, vascular risk factors (lipids, A1c)</li>
+        <li>Head imaging</li>
+      </ul>`},
   ]
 },
 
