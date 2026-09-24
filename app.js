@@ -11,8 +11,9 @@
   document.addEventListener("DOMContentLoaded", () => {
     const page = document.body.dataset.page || "home";
     buildTopNav(page);
+    const pg = pageById(page);
     if (page === "home") buildHome();
-    else buildContentPage(page);
+    else if (!(pg && pg.custom)) buildContentPage(page);
     const y = document.getElementById("year");
     if (y) y.textContent = new Date().getFullYear();
     // if arriving with a #hash, open that card
@@ -55,7 +56,7 @@
         <span class="ico">${p.ico}</span>
         <h3>${p.title}</h3>
         <p>${p.desc}</p>
-        <span class="cnt">${n} ${n === 1 ? "topic" : "topics"}</span>
+        <span class="cnt">${p.cntLabel || (n + " " + (n === 1 ? "topic" : "topics"))}</span>
       </a>`;
     });
     cards += `</div><div id="results"></div>`;
